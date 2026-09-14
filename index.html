@@ -261,8 +261,17 @@
     }
 
     @keyframes navPulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
     }
 
     .nav-actions {
@@ -388,24 +397,29 @@
       body {
         padding-top: 66px;
       }
+
       .nav-inner {
         padding: 0 16px;
         height: 64px;
         gap: 10px;
       }
+
       .nav-logo img {
         height: 42px;
         max-width: 175px;
       }
+
       .nav-actions {
         gap: 10px;
       }
+
       .nav-phone {
         height: 38px;
         padding: 0 13px;
         font-size: 12px;
         gap: 6px;
       }
+
       .nav-cta {
         height: 38px;
         padding: 0 16px;
@@ -419,29 +433,35 @@
         padding: 0 12px;
         gap: 8px;
       }
+
       .nav-logo img {
         height: 36px;
         max-width: 130px;
       }
+
       .nav-actions {
         gap: 6px;
       }
+
       .nav-phone {
         height: 36px;
         padding: 0 10px;
         font-size: 11.5px;
         gap: 5px;
       }
+
       .nav-cta {
         height: 36px;
         padding: 0 12px;
         font-size: 12px;
         gap: 4px;
       }
+
       .nav-phone-full,
       .nav-cta-full {
         display: none;
       }
+
       .nav-phone-short,
       .nav-cta-short {
         display: inline;
@@ -453,15 +473,18 @@
         padding: 0 8px;
         gap: 6px;
       }
+
       .nav-logo img {
         height: 32px;
         max-width: 110px;
       }
+
       .nav-phone {
         height: 34px;
         padding: 0 8px;
         font-size: 11px;
       }
+
       .nav-cta {
         height: 34px;
         padding: 0 10px;
@@ -1634,7 +1657,9 @@
     }
 
     @keyframes popOverlayIn {
-      to { opacity: 1; }
+      to {
+        opacity: 1;
+      }
     }
 
     #popupOverlay.hiding {
@@ -1642,7 +1667,9 @@
     }
 
     @keyframes popOverlayOut {
-      to { opacity: 0; }
+      to {
+        opacity: 0;
+      }
     }
 
     #popupNotif {
@@ -1661,6 +1688,7 @@
         transform: translate(-50%, -50%) scale(0.9);
         opacity: 0;
       }
+
       100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
@@ -1676,6 +1704,7 @@
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
       }
+
       100% {
         transform: translate(-50%, -50%) scale(0.9);
         opacity: 0;
@@ -1836,7 +1865,9 @@
     }
 
     @keyframes progressDrain {
-      to { transform: scaleX(0); }
+      to {
+        transform: scaleX(0);
+      }
     }
 
     /* ==========================================================================
@@ -1982,8 +2013,11 @@
 
       <div class="nav-actions">
         <a href="tel:9121796816" class="nav-phone" title="Call for workshop queries">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
           </svg>
           <span class="nav-phone-full">9121796816</span>
           <span class="nav-phone-short">Call</span>
@@ -1992,8 +2026,9 @@
         <a href="register.html" class="nav-cta" title="Register for Tirupati Workshop">
           <span class="nav-cta-full">Register Now</span>
           <span class="nav-cta-short">Register</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
       </div>
@@ -2010,7 +2045,7 @@
         <span>2-Day Practical Workshop &bull; Tirupati</span>
       </div>
 
-      <h1>Instant Reel Creation &amp; <span class="gradient-text">AI Film-Making</span></h1>
+      <h1>Instant Reel Creation &amp; <span class="gradient-text">AI Film-Workshop</span></h1>
       <p class="hero-desc">
         A hands-on, practical training experience. Learn how to shoot cinematic footage, edit at lightning speed, and
         launch AI-powered video reels with professional brand workflows.
@@ -2076,9 +2111,9 @@
         <a href="#curriculum" class="popup-tag">Create</a>
         <a href="#curriculum" class="popup-tag">Shoot</a>
         <a href="#curriculum" class="popup-tag">Edit</a>
-        <a href="register.html" class="popup-tag">Register &#x1F680;</a>
+        <a href="index.html" class="popup-tag">Register &#x1F680;</a>
       </div>
-      <a href="register.html" class="popup-register-btn" id="popupRegisterBtn">Register Now &#x2192;</a>
+      <a href="index.html" class="popup-register-btn" id="popupRegisterBtn">Register Now &#x2192;</a>
       <div class="popup-progress">
         <div class="popup-progress-fill"></div>
       </div>
@@ -2129,7 +2164,8 @@
             <li><span class="curr-list-check">&#x2713;</span><span>Indoor &amp; Outdoor Lighting Setup</span></li>
             <li><span class="curr-list-check">&#x2713;</span><span>Instant Cinematic Shooting Live Demo</span></li>
             <li><span class="curr-list-check">&#x2713;</span><span>Fast Mobile-First Editing Techniques</span></li>
-            <li><span class="curr-list-check">&#x2713;</span><span>Real-Time Cinematic Product Shoot Experience</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Real-Time Cinematic Product Shoot Experience</span>
+            </li>
           </ul>
         </div>
 
@@ -2146,7 +2182,8 @@
             <li><span class="curr-list-check">&#x2713;</span><span>AI Voice Over &amp; Audio Synthesis</span></li>
             <li><span class="curr-list-check">&#x2713;</span><span>AI-Powered Content Pipelines</span></li>
             <li><span class="curr-list-check">&#x2713;</span><span>META Ads Campaign Setup &amp; Scaling</span></li>
-            <li><span class="curr-list-check">&#x2713;</span><span>Creator Craft Collaboration &amp; Freelance Leads</span>
+            <li><span class="curr-list-check">&#x2713;</span><span>Creator Craft Collaboration &amp; Freelance
+                Leads</span>
             </li>
           </ul>
         </div>
@@ -2222,14 +2259,17 @@
           <ul class="recv-list">
             <li><span class="curr-list-check">&#x2713;</span><span>Official Workshop Certificate</span></li>
             <li><span class="curr-list-check">&#x2713;</span><span>Exclusive Creator Craft Media T-Shirt</span></li>
-            <li><span class="curr-list-check">&#x2713;</span><span>Complete 2-day practical workshop &amp; all deliverables</span></li>
-            <li><span class="curr-list-check">&#x2713;</span><span>Creator Craft Community support &amp; regional freelance eligibility</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Complete 2-day practical workshop &amp; all
+                deliverables</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Creator Craft Community support &amp; regional
+                freelance eligibility</span></li>
           </ul>
         </div>
       </div>
 
       <div class="lunch-callout">
-        &#9888;&#65039; <strong>Note &mdash;</strong> Lunch is not provided. Participants should make their own lunch arrangements.
+        &#9888;&#65039; <strong>Note &mdash;</strong> Lunch is not provided. Participants should make their own lunch
+        arrangements.
       </div>
     </div>
   </section>
@@ -2246,15 +2286,24 @@
       </div>
 
       <div class="audience-grid">
-        <div class="audience-card"><span class="audience-emoji">&#127916;</span><span class="audience-name">Content Creators</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#127891;</span><span class="audience-name">Students</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#128188;</span><span class="audience-name">Freelancers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#128200;</span><span class="audience-name">Digital Marketers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#128248;</span><span class="audience-name">Photographers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#127909;</span><span class="audience-name">Videographers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#128241;</span><span class="audience-name">Social Media Managers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#127917;</span><span class="audience-name">Aspiring Filmmakers</span></div>
-        <div class="audience-card"><span class="audience-emoji">&#127970;</span><span class="audience-name">Business Owners</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127916;</span><span class="audience-name">Content
+            Creators</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127891;</span><span
+            class="audience-name">Students</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128188;</span><span
+            class="audience-name">Freelancers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128200;</span><span class="audience-name">Digital
+            Marketers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128248;</span><span
+            class="audience-name">Photographers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127909;</span><span
+            class="audience-name">Videographers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128241;</span><span class="audience-name">Social Media
+            Managers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127917;</span><span class="audience-name">Aspiring
+            Filmmakers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127970;</span><span class="audience-name">Business
+            Owners</span></div>
       </div>
     </div>
   </section>
@@ -2313,17 +2362,22 @@
       <div class="faq-stack">
         <div class="glass-card faq-card">
           <div class="faq-q"><span class="faq-q-badge">Q1</span>Why should I attend this workshop?</div>
-          <div class="faq-a">It follows a professional, industry-oriented approach &mdash; the exact workflow the Creator Craft Media team uses on real brand projects. You will learn Instant Cinematic Shooting, Instant Editing, AI Filmmaking, and META Ads Campaign Creation &mdash; skills you can apply immediately.</div>
+          <div class="faq-a">It follows a professional, industry-oriented approach &mdash; the exact workflow the
+            Creator Craft Media team uses on real brand projects. You will learn Instant Cinematic Shooting, Instant
+            Editing, AI Filmmaking, and META Ads Campaign Creation &mdash; skills you can apply immediately.</div>
         </div>
 
         <div class="glass-card faq-card">
           <div class="faq-q"><span class="faq-q-badge">Q2</span>Will there be support after the workshop?</div>
-          <div class="faq-a">Yes. You become part of the exclusive Creator Craft Community, and the team continues to assist with concept-related doubts and technical clarifications after the workshop ends.</div>
+          <div class="faq-a">Yes. You become part of the exclusive Creator Craft Community, and the team continues to
+            assist with concept-related doubts and technical clarifications after the workshop ends.</div>
         </div>
 
         <div class="glass-card faq-card">
           <div class="faq-q"><span class="faq-q-badge">Q3</span>Will there be collaboration opportunities?</div>
-          <div class="faq-a">Yes. Based on your work quality, skills and performance, you may get the opportunity to collaborate with Creator Craft Media as a Registered Freelancer, with eligible freelancers receiving lead-based projects in their region.</div>
+          <div class="faq-a">Yes. Based on your work quality, skills and performance, you may get the opportunity to
+            collaborate with Creator Craft Media as a Registered Freelancer, with eligible freelancers receiving
+            lead-based projects in their region.</div>
         </div>
       </div>
     </div>
@@ -2356,20 +2410,25 @@
        ========================================================================== -->
   <section style="padding: 60px 0 100px;">
     <div class="wrap" style="text-align: center;">
-      <div class="glass-card" style="padding: 56px 36px; border-radius: var(--radius-xl); max-width: 820px; margin: 0 auto; border: 1px solid rgba(59, 130, 246, 0.35); box-shadow: 0 25px 60px -15px rgba(59, 130, 246, 0.2);">
+      <div class="glass-card"
+        style="padding: 56px 36px; border-radius: var(--radius-xl); max-width: 820px; margin: 0 auto; border: 1px solid rgba(59, 130, 246, 0.35); box-shadow: 0 25px 60px -15px rgba(59, 130, 246, 0.2);">
         <span class="section-head-tag" style="margin-bottom: 16px;">Direct Seat Reservation</span>
         <h2 style="font-size: clamp(2rem, 4vw, 2.7rem); margin-bottom: 16px;">
           Ready to Elevate Your Content &amp; <span class="gradient-text">Master AI Filmmaking</span>?
         </h2>
-        <p style="color: var(--text-muted); font-size: 1.08rem; max-width: 620px; margin: 0 auto 32px; line-height: 1.65;">
-          Participant registration and payment verification now take place on our dedicated, secure booking page. Fill in your certificate details, complete payment via UPI QR code, and receive instant confirmation.
+        <p
+          style="color: var(--text-muted); font-size: 1.08rem; max-width: 620px; margin: 0 auto 32px; line-height: 1.65;">
+          Participant registration and payment verification now take place on our dedicated, secure booking page. Fill
+          in your certificate details, complete payment via UPI QR code, and receive instant confirmation.
         </p>
 
         <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-          <a href="register.html" class="cta-button" style="font-size: 1.15rem; padding: 20px 48px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.45);">
+          <a href="register.html" class="cta-button"
+            style="font-size: 1.15rem; padding: 20px 48px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.45);">
             Proceed to Registration &amp; Payment &#x2192;
           </a>
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13.5px; color: var(--text-dim); margin-top: 6px;">
+          <div
+            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13.5px; color: var(--text-dim); margin-top: 6px;">
             <span>&#9889; Limited to Small Batch</span>
             <span>&bull;</span>
             <span>&#128179; &#8377;2,999 Complete Package</span>
@@ -2392,8 +2451,10 @@
 
       <div class="footer-links">
         <a href="tel:9121796816" class="footer-link">&#128222; Call: 9121796816</a>
-        <a href="https://wa.me/919121796816" target="_blank" rel="noopener" class="footer-link">&#128172; WhatsApp: 9121796816</a>
-        <a href="https://instagram.com/creator_craft_media" target="_blank" rel="noopener" class="footer-link">&#128248; IG: @creator_craft_media</a>
+        <a href="https://wa.me/919121796816" target="_blank" rel="noopener" class="footer-link">&#128172; WhatsApp:
+          9121796816</a>
+        <a href="https://instagram.com/creator_craft_media" target="_blank" rel="noopener" class="footer-link">&#128248;
+          IG: @creator_craft_media</a>
       </div>
 
       <p style="font-size: 13px; color: var(--text-dim); margin-top: 8px;">
@@ -2402,7 +2463,8 @@
 
       <!-- Discreet Admin Export Button for Spreadsheet CSV Download -->
       <div>
-        <button type="button" class="admin-export-btn" id="exportCsvBtn" title="Download all registered participants from this browser as CSV">
+        <button type="button" class="admin-export-btn" id="exportCsvBtn"
+          title="Download all registered participants from this browser as CSV">
           &#128229; Export Registrations to CSV
         </button>
       </div>
@@ -2482,6 +2544,14 @@
 
       if (!popup || !overlay) return;
 
+      // If user already clicked a popup link and was redirected here, hide popup immediately
+      if (sessionStorage.getItem('ccm_popup_clicked') === '1') {
+        sessionStorage.removeItem('ccm_popup_clicked');
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        return;
+      }
+
       function dismiss() {
         clearTimeout(autoTimer);
         popup.classList.add('hiding');
@@ -2495,6 +2565,8 @@
 
       popup.querySelectorAll('.popup-tag, #popupRegisterBtn').forEach(function (tag) {
         tag.addEventListener('click', function () {
+          // Mark that popup was clicked so it won't reappear after redirect
+          sessionStorage.setItem('ccm_popup_clicked', '1');
           setTimeout(dismiss, 300);
         });
       });
