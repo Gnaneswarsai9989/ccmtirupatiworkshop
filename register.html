@@ -1545,10 +1545,11 @@
           <span>&#9200;</span>
           <strong>9:00 AM – 7:00 PM</strong>
         </div>
-        <div class="meta-chip">
+        <a href="https://share.google/Cwzd2hJxCp4fyUIeO" target="_blank" rel="noopener" class="meta-chip" style="cursor:pointer; text-decoration:none; transition: border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='rgba(6,182,212,0.5)';this.style.background='rgba(6,182,212,0.08)'" onmouseout="this.style.borderColor='';this.style.background='rgba(255,255,255,0.04)'">
           <span>&#128205;</span>
-          <strong>Tirupati</strong>
-        </div>
+          <strong style="color: var(--text-main);">Kalyan Residency, Tirupati</strong>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan); flex-shrink:0;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
         <div class="meta-chip meta-chip-highlight">
           <span>&#127873;</span>
           <strong>&#8377;2,999 All Inclusive</strong>
@@ -1704,6 +1705,23 @@
                 </label>
               </div>
             </div>
+          </div>
+
+          <!-- Row 6: T-Shirt Size (shown only when T-Shirt is Yes) -->
+          <div class="form-group" id="tshirtSizeGroup" style="margin-top: 4px;">
+            <div class="label-row">
+              <label for="tshirtSize" class="label-title">T-Shirt Size <span class="req-star">*</span></label>
+              <span class="label-hint">Unisex sizes</span>
+            </div>
+            <select id="tshirtSize" name="tshirtSize" class="form-control" required>
+              <option value="" disabled selected>Select your size</option>
+              <option value="S">S &nbsp;— Small</option>
+              <option value="M">M — Medium</option>
+              <option value="L">L &nbsp;— Large</option>
+              <option value="XL">XL — Extra Large</option>
+              <option value="XXL">XXL — Double Extra Large</option>
+              <option value="XXXL">XXXL — Triple Extra Large</option>
+            </select>
           </div>
 
           <div style="margin-top: 8px;">
@@ -1967,6 +1985,30 @@
       }, duration);
     }
 
+    // T-Shirt Size toggle — show/hide based on radio selection
+    (function () {
+      var tshirtYes = document.getElementById('tshirtYes');
+      var tshirtNo = document.getElementById('tshirtNo');
+      var sizeGroup = document.getElementById('tshirtSizeGroup');
+      var sizeSelect = document.getElementById('tshirtSize');
+
+      function toggleSizeField() {
+        if (tshirtYes && tshirtYes.checked) {
+          sizeGroup.style.display = 'flex';
+          sizeSelect.required = true;
+        } else {
+          sizeGroup.style.display = 'none';
+          sizeSelect.required = false;
+          sizeSelect.value = '';
+        }
+      }
+
+      if (tshirtYes) tshirtYes.addEventListener('change', toggleSizeField);
+      if (tshirtNo) tshirtNo.addEventListener('change', toggleSizeField);
+      // Run on page load to reflect default (Yes is pre-checked)
+      toggleSizeField();
+    })();
+
     // Step 1: Proceed to Step 2
     regForm.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -2169,6 +2211,7 @@
         mobile: registration.mobile,
         email: registration.email,
         tshirt: registration.tshirt,
+        tshirtSize: registration.tshirt === 'Yes, I need one' ? (registration.tshirtSize || '') : 'N/A',
         category: registration.category,
         knowledge: registration.knowledge,
         location: registration.location,
@@ -2231,7 +2274,7 @@
           return;
         }
 
-        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "T-Shirt", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt Filename"];
+        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "T-Shirt", "T-Shirt Size", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt Filename"];
         var csvRows = [headers.join(",")];
 
         list.forEach(function (item) {
@@ -2242,6 +2285,7 @@
             '"' + (item.mobile || '') + '"',
             '"' + (item.email || '') + '"',
             '"' + (item.tshirt || '') + '"',
+            '"' + (item.tshirtSize || '') + '"',
             '"' + (item.category || '') + '"',
             '"' + (item.knowledge || '') + '"',
             '"' + (item.location || '') + '"',
