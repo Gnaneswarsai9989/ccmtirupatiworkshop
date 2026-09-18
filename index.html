@@ -629,6 +629,98 @@
       flex-shrink: 0;
     }
 
+    /* VENUE IMAGE CARD */
+    .venue-img-card {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto 32px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(56,189,248,0.12);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s ease;
+    }
+
+    .venue-img-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 28px 70px rgba(0,0,0,0.8), 0 0 0 1px rgba(56,189,248,0.3), 0 0 30px rgba(56,189,248,0.12);
+    }
+
+    .venue-img-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .venue-img-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .venue-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.2) 55%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .venue-img-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .venue-img-name {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .venue-img-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    .venue-img-map-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56,189,248,0.18);
+      border: 1px solid rgba(56,189,248,0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #38BDF8;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 520px) {
+      .venue-img-card img { height: 180px; }
+      .venue-img-name { font-size: 16px; }
+    }
+
     /* PRICE ROW & HERO CTA */
     .hero-price-box {
       display: flex;
@@ -2062,7 +2154,7 @@
           <div class="stat-lbl">Daily Timing</div>
         </div>
         <div class="stat-card">
-          <div class="stat-val" style="font-size: clamp(13px, 2.2vw, 17px); letter-spacing: -0.01em;">Kalyan Residency</div>
+          <div class="stat-val" style="font-size: clamp(13px, 2.2vw, 17px); letter-spacing: -0.01em;">Manasa Inn</div>
           <div class="stat-lbl">Venue, Tirupati</div>
         </div>
         <div class="stat-card">
@@ -2072,10 +2164,26 @@
       </div>
 
       <!-- Venue Address Notice -->
-      <a href="https://share.google/Cwzd2hJxCp4fyUIeO" target="_blank" rel="noopener" class="venue-pill" style="text-decoration: none; cursor: pointer;">
+      <a href="https://share.google/G9QqiHgaSipLl1Irr" target="_blank" rel="noopener" class="venue-pill" style="text-decoration: none; cursor: pointer;">
         <span class="venue-dot"></span>
-        <span>&#128205; <strong>Kalyan Residency, Tirupati</strong> &mdash; Tap to open in Google Maps</span>
+        <span>&#128205; <strong>Manasa Inn, Tirupati</strong> &mdash; Tap to open in Google Maps</span>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-left: 4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+
+      <!-- Venue Image Card -->
+      <a href="https://share.google/G9QqiHgaSipLl1Irr" target="_blank" rel="noopener" class="venue-img-card">
+        <img src="manasa-inn.jpg" alt="Manasa Inn, Tirupati — Workshop Venue">
+        <div class="venue-img-overlay"></div>
+        <div class="venue-img-info">
+          <div>
+            <div class="venue-img-name">&#127970; Manasa Inn</div>
+            <div class="venue-img-sub">Tirupati, Andhra Pradesh &bull; Workshop Venue</div>
+          </div>
+          <span class="venue-img-map-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Open Maps
+          </span>
+        </div>
       </a>
 
       <!-- Pricing Box -->
@@ -2340,7 +2448,7 @@
         <div class="schedule-row">
           <span class="sched-label">Venue</span>
           <span class="sched-val">
-            <a href="https://share.google/Cwzd2hJxCp4fyUIeO" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(56,189,248,0.5);">Kalyan Residency, Tirupati</a>
+            <a href="https://share.google/G9QqiHgaSipLl1Irr" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(56,189,248,0.5);">Manasa Inn, Tirupati</a>
             &nbsp;<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; color: #38BDF8;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </span>
         </div>
