@@ -1534,7 +1534,7 @@
         <span>2-Day Practical Workshop &bull; Tirupati</span>
       </div>
       <h1>Workshop <span class="gradient-text">Registration &amp; Payment</span></h1>
-      <p>Fill in your details below and confirm your &#8377;2,999 seat reservation.</p>
+      <p>Fill in your details below and confirm your &#8377;2,999 seat reservation &mdash; includes <strong>Lunch &amp; Evening Snacks both days</strong>.</p>
 
       <div class="workshop-meta-bar">
         <div class="meta-chip">
@@ -1551,8 +1551,8 @@
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan); flex-shrink:0;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </a>
         <div class="meta-chip meta-chip-highlight">
-          <span>&#127873;</span>
-          <strong>&#8377;2,999 All Inclusive</strong>
+          <span>&#127860;</span>
+          <strong>Lunch &amp; Snacks Included</strong>
         </div>
       </div>
 
@@ -1659,70 +1659,28 @@
             <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Tirupati, Chittoor, Nellore" required autocomplete="address-level2">
           </div>
 
-          <!-- Row 5: Workshop T-Shirt & Freelancing (2 Columns) -->
-          <div class="form-grid-2">
-            <div class="form-group">
-              <div class="label-row">
-                <label class="label-title">Workshop T-Shirt <span class="req-star">*</span></label>
-                <span class="label-hint">Free with pass</span>
-              </div>
-              <div class="radio-row">
-                <label class="radio-tile" for="tshirtYes">
-                  <input type="radio" id="tshirtYes" name="tshirt" value="Yes, I need one" required checked>
-                  <span class="radio-card">
-                    <span class="radio-indicator"></span>
-                    <span>Yes, I need one</span>
-                  </span>
-                </label>
-                <label class="radio-tile" for="tshirtNo">
-                  <input type="radio" id="tshirtNo" name="tshirt" value="No, I don't need one">
-                  <span class="radio-card">
-                    <span class="radio-indicator"></span>
-                    <span>No, thank you</span>
-                  </span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="label-row">
-                <label class="label-title">Freelance Network? <span class="req-star">*</span></label>
-                <span class="label-hint">Optional</span>
-              </div>
-              <div class="radio-row">
-                <label class="radio-tile" for="freelanceYes">
-                  <input type="radio" id="freelanceYes" name="freelance" value="Yes" required checked>
-                  <span class="radio-card">
-                    <span class="radio-indicator"></span>
-                    <span>Yes, interested</span>
-                  </span>
-                </label>
-                <label class="radio-tile" for="freelanceNo">
-                  <input type="radio" id="freelanceNo" name="freelance" value="No">
-                  <span class="radio-card">
-                    <span class="radio-indicator"></span>
-                    <span>No, not now</span>
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 6: T-Shirt Size (shown only when T-Shirt is Yes) -->
-          <div class="form-group" id="tshirtSizeGroup" style="margin-top: 4px;">
+          <!-- Row 5: Freelancing -->
+          <div class="form-group">
             <div class="label-row">
-              <label for="tshirtSize" class="label-title">T-Shirt Size <span class="req-star">*</span></label>
-              <span class="label-hint">Unisex sizes</span>
+              <label class="label-title">Freelance Network? <span class="req-star">*</span></label>
+              <span class="label-hint">Optional</span>
             </div>
-            <select id="tshirtSize" name="tshirtSize" class="form-control" required>
-              <option value="" disabled selected>Select your size</option>
-              <option value="S">S &nbsp;— Small</option>
-              <option value="M">M — Medium</option>
-              <option value="L">L &nbsp;— Large</option>
-              <option value="XL">XL — Extra Large</option>
-              <option value="XXL">XXL — Double Extra Large</option>
-              <option value="XXXL">XXXL — Triple Extra Large</option>
-            </select>
+            <div class="radio-row">
+              <label class="radio-tile" for="freelanceYes">
+                <input type="radio" id="freelanceYes" name="freelance" value="Yes" required checked>
+                <span class="radio-card">
+                  <span class="radio-indicator"></span>
+                  <span>Yes, interested</span>
+                </span>
+              </label>
+              <label class="radio-tile" for="freelanceNo">
+                <input type="radio" id="freelanceNo" name="freelance" value="No">
+                <span class="radio-card">
+                  <span class="radio-indicator"></span>
+                  <span>No, not now</span>
+                </span>
+              </label>
+            </div>
           </div>
 
           <div style="margin-top: 8px;">
@@ -1986,30 +1944,6 @@
       }, duration);
     }
 
-    // T-Shirt Size toggle — show/hide based on radio selection
-    (function () {
-      var tshirtYes = document.getElementById('tshirtYes');
-      var tshirtNo = document.getElementById('tshirtNo');
-      var sizeGroup = document.getElementById('tshirtSizeGroup');
-      var sizeSelect = document.getElementById('tshirtSize');
-
-      function toggleSizeField() {
-        if (tshirtYes && tshirtYes.checked) {
-          sizeGroup.style.display = 'flex';
-          sizeSelect.required = true;
-        } else {
-          sizeGroup.style.display = 'none';
-          sizeSelect.required = false;
-          sizeSelect.value = '';
-        }
-      }
-
-      if (tshirtYes) tshirtYes.addEventListener('change', toggleSizeField);
-      if (tshirtNo) tshirtNo.addEventListener('change', toggleSizeField);
-      // Run on page load to reflect default (Yes is pre-checked)
-      toggleSizeField();
-    })();
-
     // Step 1: Proceed to Step 2
     regForm.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -2211,8 +2145,6 @@
         fullName: registration.fullName,
         mobile: registration.mobile,
         email: registration.email,
-        tshirt: registration.tshirt,
-        tshirtSize: registration.tshirt === 'Yes, I need one' ? (registration.tshirtSize || '') : 'N/A',
         category: registration.category,
         knowledge: registration.knowledge,
         location: registration.location,
@@ -2275,7 +2207,7 @@
           return;
         }
 
-        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "T-Shirt", "T-Shirt Size", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt Filename"];
+        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt Filename"];
         var csvRows = [headers.join(",")];
 
         list.forEach(function (item) {
@@ -2285,8 +2217,6 @@
             '"' + (item.fullName || '') + '"',
             '"' + (item.mobile || '') + '"',
             '"' + (item.email || '') + '"',
-            '"' + (item.tshirt || '') + '"',
-            '"' + (item.tshirtSize || '') + '"',
             '"' + (item.category || '') + '"',
             '"' + (item.knowledge || '') + '"',
             '"' + (item.location || '') + '"',
