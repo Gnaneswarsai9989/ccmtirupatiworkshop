@@ -50,8 +50,10 @@ function doPost(e) {
         "Location",
         "Freelancer Interest",
         "UTR / Transaction ID",
-        "Receipt Screenshot Filename",
-        "Receipt Screenshot File (Drive Link)"
+        "Receipt 1 Screenshot Filename",
+        "Receipt 1 Screenshot File (Drive Link)",
+        "Receipt 2 Screenshot Filename",
+        "Receipt 2 Screenshot File (Drive Link)"
       ];
       sheet.appendRow(headers);
       
@@ -70,18 +72,37 @@ function doPost(e) {
       data = e.parameter;
     }
 
-    // Save receipt screenshot to Google Drive if image data is passed
-    var fileUrl = "Not uploaded";
-    if (data.receiptBase64 && data.receiptFilename) {
+    // Save Screenshot 1 to Google Drive if image data is passed
+    var fileUrl1 = "Not uploaded";
+    var receipt1Filename = data.receiptFilename || data.receipt1Filename || "None";
+    var receipt1Base64 = data.receiptBase64 || data.receipt1Base64;
+    if (receipt1Base64 && receipt1Filename && receipt1Filename !== "None") {
       try {
-        var contentType = data.receiptBase64.substring(5, data.receiptBase64.indexOf(';'));
-        var bytes = Utilities.base64Decode(data.receiptBase64.split(',')[1]);
-        var blob = Utilities.newBlob(bytes, contentType, (data.regId || "REC") + "_" + data.receiptFilename);
-        var file = DriveApp.createFile(blob);
-        file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-        fileUrl = file.getUrl();
-      } catch (driveErr) {
-        fileUrl = "Saved with error: " + driveErr.toString();
+        var contentType1 = receipt1Base64.substring(5, receipt1Base64.indexOf(';'));
+        var bytes1 = Utilities.base64Decode(receipt1Base64.split(',')[1]);
+        var blob1 = Utilities.newBlob(bytes1, contentType1, (data.regId || "REC") + "_Screenshot1_" + receipt1Filename);
+        var file1 = DriveApp.createFile(blob1);
+        file1.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+        fileUrl1 = file1.getUrl();
+      } catch (driveErr1) {
+        fileUrl1 = "Saved with error: " + driveErr1.toString();
+      }
+    }
+
+    // Save Screenshot 2 to Google Drive if image data is passed
+    var fileUrl2 = "Not uploaded";
+    var receipt2Filename = data.receipt2Filename || "None";
+    var receipt2Base64 = data.receipt2Base64;
+    if (receipt2Base64 && receipt2Filename && receipt2Filename !== "None") {
+      try {
+        var contentType2 = receipt2Base64.substring(5, receipt2Base64.indexOf(';'));
+        var bytes2 = Utilities.base64Decode(receipt2Base64.split(',')[1]);
+        var blob2 = Utilities.newBlob(bytes2, contentType2, (data.regId || "REC") + "_Screenshot2_" + receipt2Filename);
+        var file2 = DriveApp.createFile(blob2);
+        file2.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+        fileUrl2 = file2.getUrl();
+      } catch (driveErr2) {
+        fileUrl2 = "Saved with error: " + driveErr2.toString();
       }
     }
 
@@ -97,8 +118,10 @@ function doPost(e) {
       data.location || "",
       data.freelance || "",
       data.utr || "",
-      data.receiptFilename || "None",
-      fileUrl
+      receipt1Filename,
+      fileUrl1,
+      receipt2Filename,
+      fileUrl2
     ];
 
     sheet.appendRow(row);

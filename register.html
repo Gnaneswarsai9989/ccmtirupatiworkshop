@@ -1219,6 +1219,53 @@
       color: #FFFFFF;
     }
 
+    /* DUAL UPLOAD CONTAINER & COMPACT SLOTS */
+    .dual-upload-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .upload-zone-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropzone-box.compact {
+      padding: 12px 14px;
+      min-height: 82px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dropzone-box.compact .dropzone-icon {
+      font-size: 22px;
+      margin-bottom: 2px;
+    }
+
+    .dropzone-box.compact .dropzone-title {
+      font-size: 12.5px;
+      margin-bottom: 2px;
+    }
+
+    .dropzone-box.compact .dropzone-hint {
+      font-size: 11px;
+    }
+
+    .upload-preview.compact {
+      padding: 10px 12px;
+      gap: 10px;
+    }
+
+    .upload-preview.compact .preview-thumb {
+      width: 44px;
+      height: 56px;
+    }
+
     .instant-verify-pill {
       font-size: 11.5px;
       color: var(--text-muted);
@@ -1765,37 +1812,66 @@
             <!-- Right Card: Verification Details -->
             <div class="pay-card">
               <div class="pay-card-header">
-                <h3><span>&#128221;</span> 2. Enter UTR &amp; Screenshot</h3>
+                <h3><span>&#128221;</span> 2. Upload Screenshots</h3>
                 <p>Submit your payment proof to instantly lock your seat reservation</p>
               </div>
 
+              <!-- Dual Upload Container -->
+              <div class="dual-upload-container">
 
-              <!-- Upload Zone -->
-              <div class="upload-zone" style="margin: 0; flex: 1; display: flex; flex-direction: column;">
-                <div class="label-row">
-                  <span class="label-title">Payment Receipt Screenshot <span style="font-size:12px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
-                  <span class="label-hint">PNG, JPG, WEBP, PDF</span>
-                </div>
-
-                <div class="dropzone-box" id="dropzoneBox" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 145px;">
-                  <input type="file" id="receiptInput" name="receipt" accept="image/*,.pdf" class="dropzone-input" aria-label="Upload Payment Receipt Screenshot">
-                  <span class="dropzone-icon">&#128247;</span>
-                  <p class="dropzone-title">Click to upload or <span>browse screenshot</span></p>
-                  <p class="dropzone-hint">Google Pay, PhonePe, Paytm receipt</p>
-                </div>
-
-                <!-- Upload Preview -->
-                <div class="upload-preview" id="uploadPreview">
-                  <img id="previewImg" class="preview-thumb" src="" alt="Receipt Preview">
-                  <div class="preview-info">
-                    <div class="preview-filename" id="previewFilename">receipt.png</div>
-                    <div class="preview-filesize" id="previewFilesize">&#x2713; Screenshot attached</div>
+                <!-- Slot 1: Primary Screenshot -->
+                <div class="upload-zone-item">
+                  <div class="label-row" style="margin-bottom: 4px;">
+                    <span class="label-title">Screenshot 1 &mdash; Payment Receipt <span style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
+                    <span class="label-hint">PNG, JPG, PDF</span>
                   </div>
-                  <button type="button" class="preview-remove" id="removeReceiptBtn">Change</button>
+
+                  <div class="dropzone-box compact" id="dropzoneBox1">
+                    <input type="file" id="receiptInput1" name="receipt1" accept="image/*,.pdf" class="dropzone-input" aria-label="Upload Screenshot 1 - Payment Receipt">
+                    <span class="dropzone-icon">&#128247;</span>
+                    <p class="dropzone-title">Click to upload or <span>browse Screenshot 1</span></p>
+                    <p class="dropzone-hint">Google Pay, PhonePe, Paytm receipt</p>
+                  </div>
+
+                  <!-- Upload Preview 1 -->
+                  <div class="upload-preview compact" id="uploadPreview1">
+                    <img id="previewImg1" class="preview-thumb" src="" alt="Screenshot 1 Preview" title="Click to view full image">
+                    <div class="preview-info">
+                      <div class="preview-filename" id="previewFilename1">screenshot1.jpg</div>
+                      <div class="preview-filesize" id="previewFilesize1">&#x2713; Screenshot attached</div>
+                    </div>
+                    <button type="button" class="preview-remove" id="removeReceiptBtn1">Change</button>
+                  </div>
                 </div>
+
+                <!-- Slot 2: Additional Screenshot -->
+                <div class="upload-zone-item">
+                  <div class="label-row" style="margin-bottom: 4px;">
+                    <span class="label-title">Screenshot 2 &mdash; Additional Proof <span style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
+                    <span class="label-hint">PNG, JPG, PDF</span>
+                  </div>
+
+                  <div class="dropzone-box compact" id="dropzoneBox2">
+                    <input type="file" id="receiptInput2" name="receipt2" accept="image/*,.pdf" class="dropzone-input" aria-label="Upload Screenshot 2 - Additional Proof">
+                    <span class="dropzone-icon">&#128248;</span>
+                    <p class="dropzone-title">Click to upload or <span>browse Screenshot 2</span></p>
+                    <p class="dropzone-hint">Debited SMS, bank reference, or 2nd screenshot</p>
+                  </div>
+
+                  <!-- Upload Preview 2 -->
+                  <div class="upload-preview compact" id="uploadPreview2">
+                    <img id="previewImg2" class="preview-thumb" src="" alt="Screenshot 2 Preview" title="Click to view full image">
+                    <div class="preview-info">
+                      <div class="preview-filename" id="previewFilename2">screenshot2.jpg</div>
+                      <div class="preview-filesize" id="previewFilesize2">&#x2713; Screenshot attached</div>
+                    </div>
+                    <button type="button" class="preview-remove" id="removeReceiptBtn2">Change</button>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="instant-verify-pill">
+              <div class="instant-verify-pill" style="margin-top: 10px;">
                 &#x2713; Instant Verification &bull; Saved to official registration roster
               </div>
             </div>
@@ -1914,14 +1990,23 @@
     const btnText = document.getElementById('btnText');
     const btnSpinner = document.getElementById('btnSpinner');
 
-    // Receipt elements
-    const receiptInput = document.getElementById('receiptInput');
-    const dropzoneBox = document.getElementById('dropzoneBox');
-    const uploadPreview = document.getElementById('uploadPreview');
-    const previewImg = document.getElementById('previewImg');
-    const previewFilename = document.getElementById('previewFilename');
-    const previewFilesize = document.getElementById('previewFilesize');
-    const removeReceiptBtn = document.getElementById('removeReceiptBtn');
+    // Screenshot 1 elements
+    const receiptInput1 = document.getElementById('receiptInput1');
+    const dropzoneBox1 = document.getElementById('dropzoneBox1');
+    const uploadPreview1 = document.getElementById('uploadPreview1');
+    const previewImg1 = document.getElementById('previewImg1');
+    const previewFilename1 = document.getElementById('previewFilename1');
+    const previewFilesize1 = document.getElementById('previewFilesize1');
+    const removeReceiptBtn1 = document.getElementById('removeReceiptBtn1');
+
+    // Screenshot 2 elements
+    const receiptInput2 = document.getElementById('receiptInput2');
+    const dropzoneBox2 = document.getElementById('dropzoneBox2');
+    const uploadPreview2 = document.getElementById('uploadPreview2');
+    const previewImg2 = document.getElementById('previewImg2');
+    const previewFilename2 = document.getElementById('previewFilename2');
+    const previewFilesize2 = document.getElementById('previewFilesize2');
+    const removeReceiptBtn2 = document.getElementById('removeReceiptBtn2');
 
     // Modal elements
     const successModal = document.getElementById('successModal');
@@ -1932,7 +2017,8 @@
     const modalUtr = document.getElementById('modalUtr');
 
     let registration = null;
-    let receiptFileData = null;
+    let receiptFileData1 = null;
+    let receiptFileData2 = null;
 
     function showToast(msg, duration) {
       duration = duration || 3400;
@@ -1998,24 +2084,33 @@
     });
 
     // Process Receipt Upload with Intelligent Canvas Compression (Never cuts off screenshot)
-    function processReceipt(file) {
+    function processReceipt(file, slot) {
       if (!file) return;
       if (file.size > 25 * 1024 * 1024) {
         showToast('File is too large. Please select an image under 25MB.', 4000);
         return;
       }
 
+      var previewImg = slot === 1 ? previewImg1 : previewImg2;
+      var previewFilename = slot === 1 ? previewFilename1 : previewFilename2;
+      var previewFilesize = slot === 1 ? previewFilesize1 : previewFilesize2;
+      var uploadPreview = slot === 1 ? uploadPreview1 : uploadPreview2;
+      var dropzoneBox = slot === 1 ? dropzoneBox1 : dropzoneBox2;
+
       if (file.type === 'application/pdf') {
         var reader = new FileReader();
         reader.onload = function (e) {
-          receiptFileData = {
+          var fileData = {
             name: file.name,
             size: (file.size / 1024).toFixed(1) + ' KB',
             base64: e.target.result
           };
+          if (slot === 1) receiptFileData1 = fileData;
+          else receiptFileData2 = fileData;
+
           previewImg.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2248%22%20height=%2248%22%20fill=%22%2338BDF8%22%20viewBox=%220%200%2024%2024%22%3E%3Cpath%20d=%22M14%202H6c-1.1%200-2%20.9-2%202v16c0%201.1.9%202%202%202h12c1.1%200%202-.9%202-2V8l-6-6zm2%2016H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5%209H13z%22/%3E%3C%2Fsvg%3E';
           previewFilename.textContent = file.name;
-          previewFilesize.textContent = '✓ ' + receiptFileData.size + ' • Ready to save';
+          previewFilesize.textContent = '✓ ' + fileData.size + ' • Ready to save';
           uploadPreview.style.display = 'flex';
           dropzoneBox.style.display = 'none';
         };
@@ -2053,15 +2148,17 @@
           var optimizedBase64 = canvas.toDataURL('image/jpeg', 0.85);
           var approxKB = Math.round((optimizedBase64.length * 3 / 4) / 1024);
 
-          receiptFileData = {
+          var fileData = {
             name: file.name.replace(/\.[^/.]+$/, "") + ".jpg",
             size: approxKB + " KB (Optimized)",
             base64: optimizedBase64
           };
+          if (slot === 1) receiptFileData1 = fileData;
+          else receiptFileData2 = fileData;
 
           previewImg.src = optimizedBase64;
           previewFilename.textContent = file.name;
-          previewFilesize.textContent = '✓ Full screenshot attached (' + approxKB + ' KB)';
+          previewFilesize.textContent = '✓ Screenshot ' + slot + ' attached (' + approxKB + ' KB)';
           uploadPreview.style.display = 'flex';
           dropzoneBox.style.display = 'none';
         };
@@ -2070,52 +2167,59 @@
       reader.readAsDataURL(file);
     }
 
-    if (receiptInput) {
-      receiptInput.addEventListener('change', function (e) {
+    function setupDropzone(slot, inputEl, boxEl, previewEl, removeBtnEl, previewImgEl) {
+      if (!inputEl || !boxEl) return;
+
+      inputEl.addEventListener('change', function (e) {
         if (e.target.files && e.target.files[0]) {
-          processReceipt(e.target.files[0]);
+          processReceipt(e.target.files[0], slot);
         }
       });
 
       ['dragenter', 'dragover'].forEach(function (evt) {
-        dropzoneBox.addEventListener(evt, function (e) {
+        boxEl.addEventListener(evt, function (e) {
           e.preventDefault();
-          dropzoneBox.classList.add('dragover');
+          boxEl.classList.add('dragover');
         });
       });
 
       ['dragleave', 'drop'].forEach(function (evt) {
-        dropzoneBox.addEventListener(evt, function (e) {
+        boxEl.addEventListener(evt, function (e) {
           e.preventDefault();
-          dropzoneBox.classList.remove('dragover');
+          boxEl.classList.remove('dragover');
         });
       });
 
-      dropzoneBox.addEventListener('drop', function (e) {
+      boxEl.addEventListener('drop', function (e) {
         if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
-          receiptInput.files = e.dataTransfer.files;
-          processReceipt(e.dataTransfer.files[0]);
+          inputEl.files = e.dataTransfer.files;
+          processReceipt(e.dataTransfer.files[0], slot);
         }
       });
 
-      removeReceiptBtn.addEventListener('click', function () {
-        receiptFileData = null;
-        receiptInput.value = '';
-        uploadPreview.style.display = 'none';
-        dropzoneBox.style.display = 'block';
+      removeBtnEl.addEventListener('click', function () {
+        if (slot === 1) {
+          receiptFileData1 = null;
+        } else {
+          receiptFileData2 = null;
+        }
+        inputEl.value = '';
+        previewEl.style.display = 'none';
+        boxEl.style.display = 'flex';
       });
 
       // Click thumbnail to inspect full receipt screenshot
-      previewImg.addEventListener('click', function () {
-        if (receiptFileData && receiptFileData.base64) {
+      previewImgEl.addEventListener('click', function () {
+        var fileData = slot === 1 ? receiptFileData1 : receiptFileData2;
+        if (fileData && fileData.base64) {
           try {
             var viewer = window.open('', '_blank');
             if (viewer) {
-              viewer.document.title = 'Full Receipt Screenshot';
+              viewer.document.title = 'Screenshot ' + slot + ' Preview';
               viewer.document.body.style.cssText = 'margin:0;background:#000000;display:flex;align-items:center;justify-content:center;min-height:100vh;';
               var fullImg = viewer.document.createElement('img');
-              fullImg.src = receiptFileData.base64;
-              fullImg.alt = 'Receipt';
+              fullImg.src = fileData.base64;
+              fullImg.alt = 'Screenshot ' + slot;
               fullImg.style.cssText = 'max-width:96vw;max-height:96vh;object-fit:contain;border-radius:8px;box-shadow:0 0 30px rgba(0,0,0,0.9);';
               viewer.document.body.appendChild(fullImg);
             }
@@ -2125,6 +2229,9 @@
         }
       });
     }
+
+    setupDropzone(1, receiptInput1, dropzoneBox1, uploadPreview1, removeReceiptBtn1, previewImg1);
+    setupDropzone(2, receiptInput2, dropzoneBox2, uploadPreview2, removeReceiptBtn2, previewImg2);
 
     // Step 2: Instant Submission with Background Google Sheets Sync (Zero Delay!)
     utrForm.addEventListener('submit', function (e) {
@@ -2150,8 +2257,10 @@
         location: registration.location,
         freelance: registration.freelance,
         utr: utr,
-        receiptFilename: receiptFileData ? receiptFileData.name : 'None',
-        receiptBase64: receiptFileData ? receiptFileData.base64 : ''
+        receiptFilename: receiptFileData1 ? receiptFileData1.name : 'None',
+        receiptBase64: receiptFileData1 ? receiptFileData1.base64 : '',
+        receipt2Filename: receiptFileData2 ? receiptFileData2.name : 'None',
+        receipt2Base64: receiptFileData2 ? receiptFileData2.base64 : ''
       };
 
       // 1. Immediately backup to localStorage
@@ -2174,9 +2283,12 @@
       utrForm.reset();
       regForm.reset();
       registration = null;
-      receiptFileData = null;
-      if (uploadPreview) uploadPreview.style.display = 'none';
-      if (dropzoneBox) dropzoneBox.style.display = 'block';
+      receiptFileData1 = null;
+      receiptFileData2 = null;
+      if (uploadPreview1) uploadPreview1.style.display = 'none';
+      if (dropzoneBox1) dropzoneBox1.style.display = 'flex';
+      if (uploadPreview2) uploadPreview2.style.display = 'none';
+      if (dropzoneBox2) dropzoneBox2.style.display = 'flex';
 
       // 4. Background transmission to Google Sheets (Runs quietly without freezing screen)
       if (GOOGLE_SHEET_WEBAPP_URL && GOOGLE_SHEET_WEBAPP_URL.startsWith('http')) {
@@ -2207,7 +2319,7 @@
           return;
         }
 
-        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt Filename"];
+        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt 1 Filename", "Receipt 2 Filename"];
         var csvRows = [headers.join(",")];
 
         list.forEach(function (item) {
@@ -2222,7 +2334,8 @@
             '"' + (item.location || '') + '"',
             '"' + (item.freelance || '') + '"',
             '"' + (item.utr || '') + '"',
-            '"' + (item.receiptFilename || '') + '"'
+            '"' + (item.receiptFilename || item.receipt1Filename || '') + '"',
+            '"' + (item.receipt2Filename || '') + '"'
           ];
           csvRows.push(row.join(","));
         });
