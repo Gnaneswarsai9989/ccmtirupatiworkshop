@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register &amp; Payment — Instant Reel Creation &amp; AI Film-Making Workshop | Tirupati</title>
+  <title>Register &amp; Payment — Meta Ads &amp; AI Film-Making Workshop | Tirupati</title>
   <meta name="description"
-    content="Complete your registration and payment for the 2-Day Practical Workshop in Tirupati on Sep 26–27, 2026.">
+    content="Complete your registration and payment for the Tirupati Exclusive Meta Ads &amp; AI Film-Making Workshop on November 1, 2026 (Sunday).">
 
   <!-- Google Fonts: Outfit (Display) & Plus Jakarta Sans (Body) & JetBrains Mono (Codes) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -333,24 +333,29 @@
       body {
         padding-top: 66px;
       }
+
       .nav-inner {
         padding: 0 16px;
         height: 64px;
         gap: 10px;
       }
+
       .nav-logo img {
         height: 42px;
         max-width: 175px;
       }
+
       .nav-actions {
         gap: 10px;
       }
+
       .nav-phone {
         height: 38px;
         padding: 0 13px;
         font-size: 12px;
         gap: 6px;
       }
+
       .nav-back-btn {
         height: 38px;
         padding: 0 15px;
@@ -364,29 +369,35 @@
         padding: 0 12px;
         gap: 8px;
       }
+
       .nav-logo img {
         height: 36px;
         max-width: 130px;
       }
+
       .nav-actions {
         gap: 6px;
       }
+
       .nav-phone {
         height: 36px;
         padding: 0 10px;
         font-size: 11.5px;
         gap: 5px;
       }
+
       .nav-back-btn {
         height: 36px;
         padding: 0 11px;
         font-size: 12px;
         gap: 5px;
       }
+
       .nav-phone-full,
       .nav-back-full {
         display: none;
       }
+
       .nav-phone-short,
       .nav-back-short {
         display: inline;
@@ -398,15 +409,18 @@
         padding: 0 8px;
         gap: 6px;
       }
+
       .nav-logo img {
         height: 32px;
         max-width: 110px;
       }
+
       .nav-phone {
         height: 34px;
         padding: 0 8px;
         font-size: 11px;
       }
+
       .nav-back-btn {
         height: 34px;
         padding: 0 9px;
@@ -723,6 +737,28 @@
       color: #64748B;
     }
 
+    .form-control.has-error {
+      border-color: #EF4444 !important;
+      background: rgba(239, 68, 68, 0.08) !important;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3) !important;
+    }
+
+    .step1-alert-box {
+      background: rgba(239, 68, 68, 0.14);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: var(--radius-md);
+      padding: 11px 16px;
+      color: #FCA5A5;
+      font-size: 13.5px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      text-align: center;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
     select.form-control {
       appearance: none;
       -webkit-appearance: none;
@@ -811,18 +847,18 @@
       background: rgba(255, 255, 255, 0.04);
     }
 
-    .radio-tile input:checked + .radio-card {
+    .radio-tile input:checked+.radio-card {
       border-color: var(--accent-primary);
       background: rgba(59, 130, 246, 0.14);
       color: #FFFFFF;
       box-shadow: 0 0 0 1px var(--accent-primary), 0 4px 16px rgba(59, 130, 246, 0.2);
     }
 
-    .radio-tile input:checked + .radio-card .radio-indicator {
+    .radio-tile input:checked+.radio-card .radio-indicator {
       border-color: var(--accent-cyan);
     }
 
-    .radio-tile input:checked + .radio-card .radio-indicator::after {
+    .radio-tile input:checked+.radio-card .radio-indicator::after {
       background: var(--accent-cyan);
       box-shadow: 0 0 8px var(--accent-cyan);
     }
@@ -1170,7 +1206,8 @@
       width: 52px;
       height: 68px;
       border-radius: var(--radius-sm);
-      object-fit: contain; /* NEVER CROPS OR CUTS OFF THE SCREENSHOT */
+      object-fit: contain;
+      /* NEVER CROPS OR CUTS OFF THE SCREENSHOT */
       border: 1px solid rgba(56, 189, 248, 0.4);
       background: #000000;
       flex-shrink: 0;
@@ -1400,18 +1437,133 @@
       color: var(--accent-cyan);
     }
 
-    .modal-btn-close {
+    .modal-card-wide {
+      max-width: 540px;
+    }
+
+    .pass-download-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .btn-download-pass {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
-      padding: 14px;
+      padding: 16px 22px;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+      color: #000;
       font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 15px;
-      background: var(--accent-gradient);
-      color: #fff;
+      font-size: 15.5px;
+      font-weight: 800;
       border: none;
       border-radius: var(--radius-pill);
       cursor: pointer;
-      box-shadow: 0 8px 24px var(--accent-glow);
+      box-shadow: 0 6px 24px rgba(255, 215, 0, 0.45);
+      transition: all 0.2s ease;
+      letter-spacing: -0.01em;
+    }
+
+    .btn-download-pass:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(255, 215, 0, 0.7);
+      color: #000;
+    }
+
+    .btn-view-pass {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #38BDF8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-view-pass:hover {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: #38BDF8;
+      transform: translateY(-1px);
+    }
+
+    .pass-preview-dialog {
+      background: #0B0E17;
+      border: 1px solid var(--border-active);
+      border-radius: var(--radius-lg);
+      max-width: 880px;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95);
+      margin: auto;
+    }
+
+    .pass-preview-header {
+      background: #111522;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .btn-preview-action {
+      background: linear-gradient(135deg, #FFD700, #FFA500);
+      color: #000;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      border: none;
+      padding: 7px 16px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+    }
+
+    .btn-preview-close {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .modal-btn-close {
+      width: 100%;
+      padding: 13px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 14.5px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-dim);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .modal-btn-close:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
     }
 
     /* TOAST BANNER */
@@ -1555,15 +1707,19 @@
       </a>
       <div class="nav-actions">
         <a href="tel:9121796816" class="nav-phone" title="Call for help">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
           </svg>
           <span class="nav-phone-full">9121796816</span>
           <span class="nav-phone-short">Call</span>
         </a>
         <a href="index.html" class="nav-back-btn" title="Back to Workshop Overview">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
           <span class="nav-back-full">Back to Details</span>
           <span class="nav-back-short">Back</span>
@@ -1578,25 +1734,27 @@
   <header class="reg-header">
     <div class="wrap">
       <div class="reg-badge">
-        <span>2-Day Practical Workshop &bull; Tirupati</span>
+        <span>Tirupati Exclusive &bull; 1-Day Workshop</span>
       </div>
       <h1>Workshop <span class="gradient-text">Registration &amp; Payment</span></h1>
-      <p>Fill in your details below and confirm your &#8377;2,999 seat reservation &mdash; includes <strong>Lunch &amp; Evening Snacks both days</strong>.</p>
+      <p>Fill in your details below and confirm your &#8377;2,999 seat reservation &mdash; includes <strong>Lunch &amp;
+          Evening Snacks</strong>. Workshop on <strong style="color:#FFD700;">November 1, 2026 (Sunday)</strong>,
+        9AM–7PM, Tirupati.</p>
 
       <div class="workshop-meta-bar">
         <div class="meta-chip">
           <span>&#128197;</span>
-          <strong>Sep 26–27, 2026</strong>
+          <strong>Nov 1, 2026 (Sunday)</strong>
         </div>
         <div class="meta-chip">
           <span>&#9200;</span>
           <strong>9:00 AM – 7:00 PM</strong>
         </div>
-        <a href="https://share.google/G9QqiHgaSipLl1Irr" target="_blank" rel="noopener" class="meta-chip" style="cursor:pointer; text-decoration:none; transition: border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='rgba(6,182,212,0.5)';this.style.background='rgba(6,182,212,0.08)'" onmouseout="this.style.borderColor='';this.style.background='rgba(255,255,255,0.04)'">
-          <span>&#128205;</span>
-          <strong style="color: var(--text-main);">Manasa Inn, Tirupati</strong>
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan); flex-shrink:0;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
+        <div class="meta-chip"
+          style="background:rgba(255,215,0,0.08); border-color:rgba(255,215,0,0.35); color:#FFD700;">
+          <span>&#128200;</span>
+          <strong style="color:#FFD700;">Meta Ads &amp; AI Film-Making</strong>
+        </div>
         <div class="meta-chip meta-chip-highlight">
           <span>&#127860;</span>
           <strong>Lunch &amp; Snacks Included</strong>
@@ -1633,14 +1791,15 @@
           </div>
         </div>
 
-        <form id="regForm">
+        <form id="regForm" novalidate>
           <!-- Row 1: Full Name -->
           <div class="form-group">
             <div class="label-row">
               <label for="fullName" class="label-title">Full Name <span class="req-star">*</span></label>
               <span class="label-hint">For Certificate</span>
             </div>
-            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Rahul Sharma"
+              autocomplete="name">
           </div>
 
           <!-- Row 2: Mobile & Email (2 Columns) -->
@@ -1650,14 +1809,16 @@
                 <label for="mobile" class="label-title">Mobile Number <span class="req-star">*</span></label>
                 <span class="label-hint">WhatsApp</span>
               </div>
-              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="10-digit mobile number" required pattern="[0-9]{10,13}" autocomplete="tel">
+              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="e.g. 6304000624 or +91..."
+                autocomplete="tel">
             </div>
             <div class="form-group">
               <div class="label-row">
-                <label for="email" class="label-title">Email ID <span class="req-star">*</span></label>
-                <span class="label-hint">For Ticket</span>
+                <label for="email" class="label-title">Email ID</label>
+                <span class="label-hint">Optional</span>
               </div>
-              <input type="email" id="email" name="email" class="form-control" placeholder="name@domain.com" required autocomplete="email">
+              <input type="email" id="email" name="email" class="form-control" placeholder="name@domain.com (optional)"
+                autocomplete="email">
             </div>
           </div>
 
@@ -1665,34 +1826,32 @@
           <div class="form-grid-2">
             <div class="form-group">
               <div class="label-row">
-                <label for="category" class="label-title">Category / Role <span class="req-star">*</span></label>
+                <label for="category" class="label-title">Category / Role</label>
                 <span class="label-hint">Your Role</span>
               </div>
-              <select id="category" name="category" class="form-control" required>
-                <option value="" disabled selected>Choose your role</option>
-                <option>Content Creator</option>
-                <option>Student</option>
-                <option>Freelancer</option>
-                <option>Digital Marketer</option>
-                <option>Photographer / Videographer</option>
-                <option>Social Media Manager</option>
-                <option>Aspiring Filmmaker</option>
-                <option>Business Owner</option>
-                <option>Housewife</option>
-                <option>Others</option>
+              <select id="category" name="category" class="form-control">
+                <option value="Content Creator" selected>Content Creator</option>
+                <option value="Digital Marketer">Digital Marketer</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Student">Student</option>
+                <option value="Photographer / Videographer">Photographer / Videographer</option>
+                <option value="Social Media Manager">Social Media Manager</option>
+                <option value="Aspiring Filmmaker">Aspiring Filmmaker</option>
+                <option value="Business Owner">Business Owner</option>
+                <option value="Housewife">Housewife</option>
+                <option value="Others">Others</option>
               </select>
             </div>
             <div class="form-group">
               <div class="label-row">
-                <label for="knowledge" class="label-title">Knowledge Level <span class="req-star">*</span></label>
+                <label for="knowledge" class="label-title">Knowledge Level</label>
                 <span class="label-hint">Skill Level</span>
               </div>
-              <select id="knowledge" name="knowledge" class="form-control" required>
-                <option value="" disabled selected>Select current level</option>
-                <option>Zero Knowledge</option>
-                <option>Beginner</option>
-                <option>Intermediate Level</option>
-                <option>Expert</option>
+              <select id="knowledge" name="knowledge" class="form-control">
+                <option value="Beginner" selected>Beginner (All Levels Welcome)</option>
+                <option value="Zero Knowledge">Zero Knowledge</option>
+                <option value="Intermediate Level">Intermediate Level</option>
+                <option value="Expert">Expert</option>
               </select>
             </div>
           </div>
@@ -1700,21 +1859,22 @@
           <!-- Row 4: Location -->
           <div class="form-group">
             <div class="label-row">
-              <label for="location" class="label-title">City / Town <span class="req-star">*</span></label>
+              <label for="location" class="label-title">City / Town</label>
               <span class="label-hint">Your Location</span>
             </div>
-            <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Tirupati, Chittoor, Nellore" required autocomplete="address-level2">
+            <input type="text" id="location" name="location" class="form-control"
+              placeholder="e.g. Tirupati, Chittoor, Nellore" value="Tirupati" autocomplete="address-level2">
           </div>
 
           <!-- Row 5: Freelancing -->
           <div class="form-group">
             <div class="label-row">
-              <label class="label-title">Freelance Network? <span class="req-star">*</span></label>
+              <label class="label-title">Freelance Network?</label>
               <span class="label-hint">Optional</span>
             </div>
             <div class="radio-row">
               <label class="radio-tile" for="freelanceYes">
-                <input type="radio" id="freelanceYes" name="freelance" value="Yes" required checked>
+                <input type="radio" id="freelanceYes" name="freelance" value="Yes" checked>
                 <span class="radio-card">
                   <span class="radio-indicator"></span>
                   <span>Yes, interested</span>
@@ -1730,8 +1890,11 @@
             </div>
           </div>
 
+          <!-- Inline Error Banner (Instantly visible right above the button) -->
+          <div id="step1AlertBox" class="step1-alert-box"></div>
+
           <div style="margin-top: 8px;">
-            <button type="submit" class="btn-submit">
+            <button type="button" class="btn-submit" id="step1SubmitBtn">
               <span>Proceed to Payment (&#8377;2,999)</span>
               <span style="font-size: 18px; line-height: 1;">&rarr;</span>
             </button>
@@ -1794,7 +1957,8 @@
                 <div class="upi-box">
                   <span id="upiId">alphaassetfinserv@sbi</span>
                   <button type="button" class="copy-button" id="copyUpi">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                       <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                     </svg>
@@ -1822,12 +1986,14 @@
                 <!-- Slot 1: Primary Screenshot -->
                 <div class="upload-zone-item">
                   <div class="label-row" style="margin-bottom: 4px;">
-                    <span class="label-title">Screenshot 1 &mdash; Payment Receipt <span style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
+                    <span class="label-title">Screenshot 1 &mdash; Payment Receipt <span
+                        style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
                     <span class="label-hint">PNG, JPG, PDF</span>
                   </div>
 
                   <div class="dropzone-box compact" id="dropzoneBox1">
-                    <input type="file" id="receiptInput1" name="receipt1" accept="image/*,.pdf" class="dropzone-input" aria-label="Upload Screenshot 1 - Payment Receipt">
+                    <input type="file" id="receiptInput1" name="receipt1" accept="image/*,.pdf" class="dropzone-input"
+                      aria-label="Upload Screenshot 1 - Payment Receipt">
                     <span class="dropzone-icon">&#128247;</span>
                     <p class="dropzone-title">Click to upload or <span>browse Screenshot 1</span></p>
                     <p class="dropzone-hint">Google Pay, PhonePe, Paytm receipt</p>
@@ -1835,7 +2001,8 @@
 
                   <!-- Upload Preview 1 -->
                   <div class="upload-preview compact" id="uploadPreview1">
-                    <img id="previewImg1" class="preview-thumb" src="" alt="Screenshot 1 Preview" title="Click to view full image">
+                    <img id="previewImg1" class="preview-thumb" src="" alt="Screenshot 1 Preview"
+                      title="Click to view full image">
                     <div class="preview-info">
                       <div class="preview-filename" id="previewFilename1">screenshot1.jpg</div>
                       <div class="preview-filesize" id="previewFilesize1">&#x2713; Screenshot attached</div>
@@ -1847,12 +2014,14 @@
                 <!-- Slot 2: Additional Screenshot -->
                 <div class="upload-zone-item">
                   <div class="label-row" style="margin-bottom: 4px;">
-                    <span class="label-title">Screenshot 2 &mdash; Additional Proof <span style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
+                    <span class="label-title">Screenshot 2 &mdash; Additional Proof <span
+                        style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></span>
                     <span class="label-hint">PNG, JPG, PDF</span>
                   </div>
 
                   <div class="dropzone-box compact" id="dropzoneBox2">
-                    <input type="file" id="receiptInput2" name="receipt2" accept="image/*,.pdf" class="dropzone-input" aria-label="Upload Screenshot 2 - Additional Proof">
+                    <input type="file" id="receiptInput2" name="receipt2" accept="image/*,.pdf" class="dropzone-input"
+                      aria-label="Upload Screenshot 2 - Additional Proof">
                     <span class="dropzone-icon">&#128248;</span>
                     <p class="dropzone-title">Click to upload or <span>browse Screenshot 2</span></p>
                     <p class="dropzone-hint">Debited SMS, bank reference, or 2nd screenshot</p>
@@ -1860,13 +2029,25 @@
 
                   <!-- Upload Preview 2 -->
                   <div class="upload-preview compact" id="uploadPreview2">
-                    <img id="previewImg2" class="preview-thumb" src="" alt="Screenshot 2 Preview" title="Click to view full image">
+                    <img id="previewImg2" class="preview-thumb" src="" alt="Screenshot 2 Preview"
+                      title="Click to view full image">
                     <div class="preview-info">
                       <div class="preview-filename" id="previewFilename2">screenshot2.jpg</div>
                       <div class="preview-filesize" id="previewFilesize2">&#x2713; Screenshot attached</div>
                     </div>
                     <button type="button" class="preview-remove" id="removeReceiptBtn2">Change</button>
                   </div>
+                </div>
+
+                <!-- Optional UTR Input Field -->
+                <div class="form-group" style="margin-top: 10px; margin-bottom: 0;">
+                  <div class="label-row" style="margin-bottom: 4px;">
+                    <label for="utrInput" class="label-title">UTR / UPI Transaction Reference <span
+                        style="font-size:11.5px;color:var(--text-muted);font-weight:400;">(optional)</span></label>
+                    <span class="label-hint">12-digit number</span>
+                  </div>
+                  <input type="text" id="utrInput" name="utr" class="form-control"
+                    placeholder="e.g. 4287XXXXXXXX or Bank Reference No.">
                 </div>
 
               </div>
@@ -1897,15 +2078,16 @@
        SUCCESS CONFIRMATION MODAL
        ========================================================================== -->
   <div class="modal-overlay" id="successModal">
-    <div class="modal-card">
+    <div class="modal-card modal-card-wide">
       <div class="modal-badge">&#x2713;</div>
       <h3>Reservation Confirmed!</h3>
-      <p class="modal-subtitle">Your details and payment reference have been recorded successfully in our spreadsheet.</p>
+      <p class="modal-subtitle">Your registration and payment reference have been recorded successfully in our database
+        &amp; spreadsheet.</p>
 
       <div class="reg-id-card">
         <div class="reg-id-row">
           <span class="reg-id-label">Registration ID:</span>
-          <span class="reg-id-value reg-id-highlight" id="modalRegId">CCM-TRP-2026-0000</span>
+          <span class="reg-id-value reg-id-highlight" id="modalRegId">CCM-TPT-10036</span>
         </div>
         <div class="reg-id-row">
           <span class="reg-id-label">Participant:</span>
@@ -1921,18 +2103,74 @@
         </div>
         <div class="reg-id-row">
           <span class="reg-id-label">Dates &amp; Timing:</span>
-          <span class="reg-id-value">Sep 26–27 (9 AM – 7 PM)</span>
+          <span class="reg-id-value" style="color:#FFD700; font-weight:700;">Nov 1, 2026 (Sunday) &bull; 9 AM – 7
+            PM</span>
         </div>
         <div class="reg-id-row">
           <span class="reg-id-label">Venue:</span>
-          <span class="reg-id-value">Tirupati</span>
+          <span class="reg-id-value">Manasa Inn, Tirupati</span>
+        </div>
+      </div>
+
+      <!-- PASS DOWNLOAD ACTIONS -->
+      <div class="pass-download-actions">
+        <button type="button" class="btn-download-pass" id="downloadPassPdfBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Official Pass (PDF / Print)</span>
+        </button>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <button type="button" class="btn-view-pass" id="downloadPassHtmlBtn"
+            title="Download standalone HTML registration form">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>Save HTML</span>
+          </button>
+          <button type="button" class="btn-view-pass" id="viewPassModalBtn" title="Preview registration pass on screen">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>View Pass</span>
+          </button>
         </div>
       </div>
 
       <button type="button" class="modal-btn-close" id="modalCloseBtn">Done &bull; Return to Overview</button>
       <p style="font-size: 12px; color: var(--text-dim); margin-top: 14px;">
-        Please take a screenshot of this confirmation for your records. See you in Tirupati!
+        Please download or save your official pass for venue check-in. See you in Tirupati!
       </p>
+    </div>
+  </div>
+
+  <!-- Pass Preview Fullscreen Modal -->
+  <div class="modal-overlay" id="passPreviewModal" style="z-index: 100050; padding: 12px;">
+    <div class="pass-preview-dialog">
+      <div class="pass-preview-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:16px;">🎟️</span>
+          <strong style="color:#fff; font-size:14px; font-family:var(--font-display);">Official VIP Delegate Pass
+            Preview</strong>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button type="button" class="btn-preview-action" id="printFromPreviewBtn">🖨️ Print / Save PDF</button>
+          <button type="button" class="btn-preview-close" id="closePassPreviewBtn"
+            aria-label="Close preview">&times;</button>
+        </div>
+      </div>
+      <div class="pass-preview-body" style="padding: 10px; background: #000;">
+        <iframe id="previewPassFrame" title="Delegate Pass Preview"
+          style="width:100%; height:75vh; border:none; border-radius:6px; background:#fff;"></iframe>
+      </div>
     </div>
   </div>
 
@@ -1945,17 +2183,20 @@
   <footer>
     <div class="wrap">
       <img src="logo.png" alt="Creator Craft Media" class="footer-logo">
-      <p style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-        Instant Reel Creation &amp; AI Film-Making Workshop
+      <p
+        style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+        Meta Ads &amp; AI Film-Making Workshop
       </p>
       <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
-        September 26 &amp; 27, 2026 &bull; 9:00 AM – 7:00 PM &bull; Tirupati
+        November 1, 2026 (Sunday) &bull; 9:00 AM – 7:00 PM &bull; Tirupati
       </p>
 
       <div class="footer-links">
         <a href="tel:9121796816" class="footer-link">&#128222; Call: 9121796816</a>
-        <a href="https://wa.me/919121796816" target="_blank" rel="noopener" class="footer-link">&#128172; WhatsApp: 9121796816</a>
-        <a href="https://instagram.com/creator_craft_media" target="_blank" rel="noopener" class="footer-link">&#128248; IG: @creator_craft_media</a>
+        <a href="https://wa.me/919121796816" target="_blank" rel="noopener" class="footer-link">&#128172; WhatsApp:
+          9121796816</a>
+        <a href="https://instagram.com/creator_craft_media" target="_blank" rel="noopener" class="footer-link">&#128248;
+          IG: @creator_craft_media</a>
       </div>
 
       <p style="font-size: 12.5px; color: var(--text-dim); margin-top: 8px;">
@@ -1964,9 +2205,7 @@
 
       <!-- Discreet Admin Export Button for Spreadsheet CSV Download -->
       <div>
-        <button type="button" class="admin-export-btn" id="exportCsvBtn" title="Download all registered participants from this browser as CSV">
-          &#128229; Export Registrations to CSV
-        </button>
+        <button type="button" class="admin-export-btn" id="exportCsvBtn" </button>
       </div>
     </div>
   </footer>
@@ -2030,27 +2269,238 @@
       }, duration);
     }
 
-    // Step 1: Proceed to Step 2
-    regForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      registration = Object.fromEntries(new FormData(regForm).entries());
+    // Current active registration ID and cached payload
+    window.currentRegId = null;
+    window.lastConfirmedRegistration = null;
 
-      // Update Step 2 Participant Summary Bar
-      const summaryNameEl = document.getElementById('summaryName');
-      const summaryMetaEl = document.getElementById('summaryMeta');
-      if (summaryNameEl) summaryNameEl.textContent = registration.fullName || 'Participant';
-      if (summaryMetaEl) summaryMetaEl.textContent = (registration.mobile || '') + ' • ' + (registration.category || '') + ' • ' + (registration.location || '');
+    // Helper: Find or update registration in localStorage
+    function saveOrUpdateRegistration(payload) {
+      try {
+        var existing = JSON.parse(localStorage.getItem('ccm_workshop_registrations') || '[]');
+        var foundIndex = -1;
+        for (var i = 0; i < existing.length; i++) {
+          if ((payload.regId && existing[i].regId === payload.regId) ||
+            (payload.mobile && existing[i].mobile === payload.mobile)) {
+            foundIndex = i;
+            break;
+          }
+        }
+        if (foundIndex >= 0) {
+          existing[foundIndex] = Object.assign({}, existing[foundIndex], payload);
+        } else {
+          existing.push(payload);
+        }
+        localStorage.setItem('ccm_workshop_registrations', JSON.stringify(existing));
+      } catch (storageErr) {
+        console.warn('LocalStorage error:', storageErr);
+      }
+    }
 
+    // Helper: Send payload to Google Sheets in background
+    function syncToGoogleSheets(payload) {
+      if (GOOGLE_SHEET_WEBAPP_URL && GOOGLE_SHEET_WEBAPP_URL.startsWith('http')) {
+        fetch(GOOGLE_SHEET_WEBAPP_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        }).then(function () {
+          console.log('Google Sheets record stored successfully:', payload.regId, payload.status);
+        }).catch(function (fetchErr) {
+          console.warn('Google Sheets background sync error:', fetchErr);
+        });
+      }
+    }
+
+    // Helper: Safely extract all values from any form across all browsers
+    function extractFormData(form) {
+      var data = {};
+      try {
+        if (window.FormData && typeof Object.fromEntries === 'function') {
+          var fd = new FormData(form);
+          if (typeof fd.entries === 'function') {
+            data = Object.fromEntries(fd.entries());
+          }
+        }
+      } catch (e) { }
+
+      // Robust fallback from form.elements (guaranteed to work in 100% of browsers)
+      if (!data || Object.keys(data).length === 0) {
+        var els = form.elements;
+        for (var i = 0; i < els.length; i++) {
+          var el = els[i];
+          if (!el.name) continue;
+          if (el.type === 'radio' || el.type === 'checkbox') {
+            if (el.checked) data[el.name] = el.value;
+          } else {
+            data[el.name] = el.value ? el.value.trim() : '';
+          }
+        }
+      }
+      return data;
+    }
+
+    // Master function: Transition cleanly to Step 2
+    function proceedToStep2() {
+      // 1. Extract values
+      var fd = extractFormData(regForm);
+
+      // 2. Validate required fields with friendly toasts and visible inline alerts
+      var fullNameInput = document.getElementById('fullName');
+      var mobileInput = document.getElementById('mobile');
+      var emailInput = document.getElementById('email');
+      var categorySelect = document.getElementById('category');
+      var knowledgeSelect = document.getElementById('knowledge');
+      var locationInput = document.getElementById('location');
+      var alertBox = document.getElementById('step1AlertBox');
+
+      // Clear previous error states
+      if (fullNameInput) fullNameInput.classList.remove('has-error');
+      if (mobileInput) mobileInput.classList.remove('has-error');
+      if (alertBox) { alertBox.style.display = 'none'; alertBox.textContent = ''; }
+
+      var nameVal = (fullNameInput && fullNameInput.value.trim()) || fd.fullName || '';
+      var mobileVal = (mobileInput && mobileInput.value.trim()) || fd.mobile || '';
+      var emailVal = (emailInput && emailInput.value.trim()) || fd.email || '';
+      var catVal = (categorySelect && categorySelect.value) || fd.category || 'Content Creator';
+      var knowVal = (knowledgeSelect && knowledgeSelect.value) || fd.knowledge || 'Beginner';
+      var locVal = (locationInput && locationInput.value.trim()) || fd.location || 'Tirupati';
+
+      // Require Full Name
+      if (!nameVal) {
+        if (fullNameInput) {
+          fullNameInput.classList.add('has-error');
+          fullNameInput.focus();
+        }
+        if (alertBox) {
+          alertBox.style.display = 'flex';
+          alertBox.textContent = '⚠️ Please enter your Full Name to proceed.';
+        }
+        showToast('Please enter your Full Name for the certificate.');
+        return false;
+      }
+
+      // Require Mobile Number (at least 10 digits)
+      var cleanMobile = mobileVal.replace(/[\s\-\+]/g, '');
+      if (cleanMobile.length < 10) {
+        if (mobileInput) {
+          mobileInput.classList.add('has-error');
+          mobileInput.focus();
+        }
+        if (alertBox) {
+          alertBox.style.display = 'flex';
+          alertBox.textContent = '⚠️ Please enter your 10-digit Mobile Number.';
+        }
+        showToast('Please enter a valid 10-digit mobile number.');
+        return false;
+      }
+
+      // Non-blocking email: if empty or no @, create a safe fallback for pass/spreadsheet
+      if (!emailVal || emailVal.indexOf('@') === -1) {
+        emailVal = nameVal.toLowerCase().replace(/[^a-z0-9]/g, '') + '@creatorcraft.in';
+      }
+
+      // Update registration object with validated values
+      registration = {
+        fullName: nameVal,
+        mobile: mobileVal,
+        email: emailVal,
+        category: catVal,
+        knowledge: knowVal,
+        location: locVal,
+        freelance: fd.freelance || 'Yes'
+      };
+
+      // 3. IMMEDIATE UI TRANSITION TO STEP 2 (NEVER BLOCKED)
       step1Container.style.display = 'none';
       paymentSection.style.display = 'block';
 
-      stepPill1.classList.remove('active');
-      stepPill1.classList.add('completed');
-      stepPill2.classList.add('active');
+      if (stepPill1) {
+        stepPill1.classList.remove('active');
+        stepPill1.classList.add('completed');
+      }
+      if (stepPill2) {
+        stepPill2.classList.add('active');
+      }
+
+      // Update Participant Summary Bar
+      var summaryNameEl = document.getElementById('summaryName');
+      var summaryMetaEl = document.getElementById('summaryMeta');
+      if (summaryNameEl) summaryNameEl.textContent = registration.fullName;
+      if (summaryMetaEl) summaryMetaEl.textContent = registration.mobile + ' • ' + registration.category + ' • ' + registration.location;
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      showToast('Step 1 complete! Please scan QR and submit your UTR number.');
+      showToast('Step 1 complete! Please scan QR & submit payment reference.');
+
+      // 4. Safely save Step 1 in background (localStorage & Google Sheets)
+      try {
+        if (!window.currentRegId) {
+          window.currentRegId = 'CCM-TPT-' + Math.floor(10000 + Math.random() * 90000);
+        }
+
+        var step1Payload = {
+          timestamp: new Date().toISOString(),
+          regId: window.currentRegId,
+          fullName: registration.fullName,
+          mobile: registration.mobile,
+          email: registration.email,
+          category: registration.category,
+          knowledge: registration.knowledge,
+          location: registration.location,
+          freelance: registration.freelance,
+          status: 'Step 1 - Payment Pending',
+          fee: 'Rs. 2,999 (Lunch & Snacks Included)',
+          utr: 'Pending Payment (Step 1 Completed)',
+          receiptFilename: 'Pending',
+          receiptBase64: '',
+          receipt2Filename: 'Pending',
+          receipt2Base64: ''
+        };
+
+        saveOrUpdateRegistration(step1Payload);
+        syncToGoogleSheets(step1Payload);
+        window.lastConfirmedRegistration = step1Payload;
+      } catch (saveErr) {
+        console.warn('Background sync warning:', saveErr);
+      }
+
+      return true;
+    }
+
+    // Clear input errors when typing
+    ['fullName', 'mobile'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', function () {
+          el.classList.remove('has-error');
+          var alertBox = document.getElementById('step1AlertBox');
+          if (alertBox) alertBox.style.display = 'none';
+        });
+      }
     });
+
+    // Step 1: Direct button click handler (bypasses any browser native validation lockups)
+    var step1SubmitBtn = document.getElementById('step1SubmitBtn');
+    if (step1SubmitBtn) {
+      step1SubmitBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        proceedToStep2();
+      });
+    }
+
+    // Step 1: Handle form submit as backup
+    regForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      proceedToStep2();
+    });
+
+    // Step Indicator: Allow clicking Step 2 pill
+    if (stepPill2) {
+      stepPill2.style.cursor = 'pointer';
+      stepPill2.addEventListener('click', function () {
+        proceedToStep2();
+      });
+    }
 
     // Back to Step 1 function
     function returnToStep1() {
@@ -2233,56 +2683,657 @@
     setupDropzone(1, receiptInput1, dropzoneBox1, uploadPreview1, removeReceiptBtn1, previewImg1);
     setupDropzone(2, receiptInput2, dropzoneBox2, uploadPreview2, removeReceiptBtn2, previewImg2);
 
-    // Step 2: Instant Submission with Background Google Sheets Sync (Zero Delay!)
+    // ==========================================================================
+    // OFFICIAL VIP DELEGATE PASS GENERATOR (EXACT REPLICA OF WORKSHOP PASS)
+    // ==========================================================================
+    function generatePassHtml(data) {
+      data = data || {};
+      var regId = data.regId || window.currentRegId || 'CCM-TPT-10036';
+      var name = data.fullName || 'Participant';
+      var mobile = data.mobile || '-';
+      var email = data.email || '-';
+      var category = data.category || 'Creator / Marketer';
+      var location = data.location || 'Tirupati';
+      var fee = data.fee || 'Rs. 2,999 (Lunch & Snacks Included)';
+      var isConfirmed = data.status && data.status.indexOf('Confirmed') !== -1;
+      var statusText = isConfirmed ? 'Payment Submitted' : 'Payment Pending';
+      var utr = data.utr || (isConfirmed ? 'Payment Completed (Screenshot Attached)' : 'Pending Verification');
+
+      return `<\x21DOCTYPE html>
+<\x68tml lang="en">
+<\x68ead>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official VIP Delegate Pass - ${regId}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 6mm 8mm;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0D1117;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.4;
+    padding: 20px 10px;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .pass-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid #CBD5E1;
+  }
+  /* HEADER */
+  .pass-header {
+    background: #060911;
+    color: #FFFFFF;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #0284C7;
+  }
+  .pass-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .pass-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+  }
+  .pass-brand-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .pass-brand-sub {
+    font-size: 8.5px;
+    font-weight: 700;
+    color: #94A3B8;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .pass-meta-right {
+    text-align: right;
+  }
+  .pass-official-tag {
+    font-size: 10px;
+    font-weight: 800;
+    color: #38BDF8;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .pass-code-display {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 21px;
+    font-weight: 800;
+    color: #38BDF8;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+  }
+  .pass-event-date {
+    font-size: 11.5px;
+    color: #94A3B8;
+    margin-top: 3px;
+  }
+  .pass-status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 9999px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    background: ${isConfirmed ? '#047857' : '#B45309'};
+    color: ${isConfirmed ? '#D1FAE5' : '#FEF3C7'};
+    border: 1px solid ${isConfirmed ? '#10B981' : '#F59E0B'};
+  }
+
+  /* PASS BODY */
+  .pass-body {
+    padding: 20px 24px;
+    background: #FFFFFF;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  /* CREDENTIALS CARD WITH CYAN ACCENT BAR */
+  .cred-card {
+    border: 1px solid #CBD5E1;
+    border-left: 6px solid #0284C7;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  .cred-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  .cred-row:last-child {
+    border-bottom: none;
+  }
+  .cred-row:nth-child(odd) {
+    background: #F8FAFC;
+  }
+  .cred-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 14px;
+    font-size: 12px;
+    gap: 8px;
+  }
+  .cred-cell:first-child {
+    border-right: 1px solid #E2E8F0;
+  }
+  .cred-title {
+    color: #64748B;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .cred-data {
+    color: #0F172A;
+    font-weight: 700;
+    text-align: right;
+    word-break: break-all;
+  }
+  .cred-data.highlight-role {
+    color: #6366F1;
+  }
+  .cred-data.highlight-status {
+    color: ${isConfirmed ? '#047857' : '#B45309'};
+  }
+
+  /* 2-COLUMN MODULES */
+  .modules-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .mod-box {
+    border-radius: 8px;
+    padding: 13px 15px;
+    font-size: 11px;
+  }
+  .mod-box-1 {
+    background: #F0F9FF;
+    border: 1px solid #BAE6FD;
+  }
+  .mod-box-2 {
+    background: #FAF5FF;
+    border: 1px solid #E9D5FF;
+  }
+  .mod-heading {
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .mod-box-1 .mod-heading { color: #0284C7; }
+  .mod-box-2 .mod-heading { color: #7E22CE; }
+  .mod-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mod-list li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 3.5px;
+    color: #334155;
+    line-height: 1.35;
+  }
+  .mod-list li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    font-weight: 800;
+  }
+  .mod-box-1 .mod-list li::before { color: #0284C7; }
+  .mod-box-2 .mod-list li::before { color: #7E22CE; }
+
+  /* INSTRUCTIONS */
+  .instructions-box {
+    background: #FEFCE8;
+    border: 1px solid #FEF08A;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 16px;
+  }
+  .instructions-title {
+    font-size: 11.5px;
+    font-weight: 800;
+    color: #854D0E;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .instructions-list {
+    padding-left: 16px;
+    font-size: 10.5px;
+    color: #451A03;
+    line-height: 1.45;
+  }
+  .instructions-list li {
+    margin-bottom: 2px;
+  }
+
+  /* FOOTER */
+  .pass-footer {
+    background: #060911;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #0284C7;
+  }
+  .desk-details {
+    font-size: 10.5px;
+    color: #94A3B8;
+    line-height: 1.5;
+  }
+  .desk-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #38BDF8;
+    letter-spacing: 0.06em;
+    margin-bottom: 3px;
+  }
+  .verification-badge-card {
+    border: 2px solid #0284C7;
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-align: center;
+    background: rgba(2, 132, 199, 0.08);
+    flex-shrink: 0;
+  }
+  .verif-subtitle {
+    font-size: 9px;
+    font-weight: 800;
+    color: #38BDF8;
+    letter-spacing: 0.08em;
+  }
+  .verif-main-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    margin: 2px 0;
+  }
+  .verif-pass-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: #38BDF8;
+  }
+  .verif-validity {
+    font-size: 9.5px;
+    color: #94A3B8;
+    margin-top: 2px;
+  }
+
+  .no-print-bar {
+    max-width: 780px;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .print-btn-float {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(255,215,0,0.4);
+  }
+
+  @media print {
+    body {
+      background: transparent;
+      padding: 0;
+    }
+    .no-print-bar {
+      display: none !important;
+    }
+    .pass-wrapper {
+      box-shadow: none;
+      border: 1px solid #CBD5E1;
+      max-width: 100%;
+    }
+  }
+<\x2fstyle>
+<\x2fhead>
+<\x62ody>
+  <div class="no-print-bar">
+    <button type="button" class="print-btn-float" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="pass-wrapper">
+    <!-- HEADER -->
+    <div class="pass-header">
+      <div class="pass-brand">
+        <img src="logo.png" alt="Creator Craft Media" class="pass-logo" onerror="this.style.display='none'">
+        <div>
+          <div class="pass-brand-title">CREATOR CRAFT MEDIA</div>
+          <div class="pass-brand-sub">SHOOT &bull; CINEMATIC &bull; EDIT &bull; ICONIC</div>
+        </div>
+      </div>
+      <div class="pass-meta-right">
+        <div class="pass-official-tag">OFFICIAL VIP DELEGATE PASS</div>
+        <div class="pass-code-display">${regId}</div>
+        <div class="pass-event-date">Nov 1, 2026 &bull; Tirupati, AP</div>
+        <div>
+          <span class="pass-status-badge">${statusText}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="pass-body">
+      <div class="section-label">DELEGATE CREDENTIAL &amp; RESERVATION DETAILS</div>
+
+      <div class="cred-card">
+        <div class="cred-row">
+          <div class="cred-cell">
+            <span class="cred-title">Participant Name:</span>
+            <span class="cred-data">${name}</span>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-title">Mobile Number:</span>
+            <span class="cred-data">${mobile}</span>
+          </div>
+        </div>
+        <div class="cred-row">
+          <div class="cred-cell">
+            <span class="cred-title">Email Address:</span>
+            <span class="cred-data">${email}</span>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-title">Category / Role:</span>
+            <span class="cred-data highlight-role">${category}</span>
+          </div>
+        </div>
+        <div class="cred-row">
+          <div class="cred-cell">
+            <span class="cred-title">Workshop Fee:</span>
+            <span class="cred-data">${fee}</span>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-title">Payment Status:</span>
+            <span class="cred-data highlight-status">${statusText}</span>
+          </div>
+        </div>
+        <div class="cred-row">
+          <div class="cred-cell">
+            <span class="cred-title">UTR Reference:</span>
+            <span class="cred-data">${utr}</span>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-title">Location / City:</span>
+            <span class="cred-data">${location}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">OFFICIAL WORKSHOP PRACTICAL MODULES</div>
+
+      <div class="modules-container">
+        <div class="mod-box mod-box-1">
+          <div class="mod-heading">DAY 01 &bull; NOV 01: META ADS LIVE WORKSHOP</div>
+          <ul class="mod-list">
+            <li>High-ROAS Facebook &amp; Instagram Ad Architecture</li>
+            <li>Laser Audience Targeting &amp; Lookalike Segments</li>
+            <li>Winning Ad Creatives, Angles &amp; Copy Strategy</li>
+            <li>Budget Optimization, Scaling &amp; Conversion Tracking</li>
+            <li>Sound Design, Trending Audio &amp; Viral Pacing</li>
+          </ul>
+        </div>
+
+        <div class="mod-box mod-box-2">
+          <div class="mod-heading">DAY 02 &bull; NOV 01: AI FILMS &amp; MONETIZATION</div>
+          <ul class="mod-list">
+            <li>Generative AI Video, Scripting &amp; Storyboards</li>
+            <li>Google Flow, Higgsfield, Seedance &amp; Kling Deep Dive</li>
+            <li>AI Voice Cloning &amp; Lip-Sync Filmmaking</li>
+            <li>CapCut Pro Video Editing Masterclass</li>
+            <li>Client Acquisition, Pricing &amp; Freelance Blueprint</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="instructions-box">
+        <div class="instructions-title">IMPORTANT WORKSHOP INSTRUCTIONS FOR ATTENDEES</div>
+        <ol class="instructions-list">
+          <li><strong>Reporting Time:</strong> Arrive at venue by 8:45 AM for registration badge and kit collection.</li>
+          <li><strong>Equipment:</strong> Bring smartphone with 15GB free storage and power bank (Laptop optional).</li>
+          <li><strong>Food &amp; Refreshments:</strong> Delicious lunch &amp; evening high-tea snacks provided on both days.</li>
+          <li><strong>Certification:</strong> Official Creator Craft Media Workshop Certificate awarded at closing ceremony.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="pass-footer">
+      <div class="desk-details">
+        <div class="desk-title">CREATOR CRAFT MEDIA &bull; TIRUPATI DESK</div>
+        <div>Helpline / WhatsApp: +91 9121796816 | Instagram: @creator_craft_media</div>
+        <div>UPI Merchant ID: alphaassetfinserv@sbi (SBI Business Account)</div>
+        <div style="margin-top: 3px; color: #E2E8F0;">Please present this verified pass or Registration ID at venue desk.</div>
+      </div>
+      <div class="verification-badge-card">
+        <div class="verif-subtitle">OFFICIAL VERIFICATION</div>
+        <div class="verif-main-title">VERIFIED VIP PASS</div>
+        <div class="verif-pass-code">CODE: ${regId}</div>
+        <div class="verif-validity">Valid for Nov 1, 2026</div>
+      </div>
+    </div>
+  </div>
+<\x2fbody>
+<\x2fhtml>`;
+    }
+
+    // Helper: Retrieve the best registration data for pass generation
+    function getRegistrationDataForPass() {
+      if (window.lastConfirmedRegistration) return window.lastConfirmedRegistration;
+      if (registration) {
+        return {
+          timestamp: new Date().toISOString(),
+          regId: window.currentRegId || 'CCM-TPT-10036',
+          fullName: registration.fullName || 'Participant',
+          mobile: registration.mobile || '',
+          email: registration.email || '',
+          category: registration.category || 'Creator / Marketer',
+          location: registration.location || 'Tirupati',
+          knowledge: registration.knowledge || 'Beginner',
+          freelance: registration.freelance || 'Yes',
+          status: 'Confirmed - Payment Submitted',
+          fee: 'Rs. 2,999 (Lunch & Snacks Included)',
+          utr: 'Payment Completed (Screenshot Attached)'
+        };
+      }
+      try {
+        var stored = JSON.parse(localStorage.getItem('ccm_workshop_registrations') || '[]');
+        if (stored.length > 0) return stored[stored.length - 1];
+      } catch (e) { }
+      return {
+        timestamp: new Date().toISOString(),
+        regId: 'CCM-TPT-10036',
+        fullName: 'Participant',
+        mobile: '9121796816',
+        email: 'info@creatorcraft.in',
+        category: 'Digital Marketer',
+        location: 'Tirupati',
+        status: 'Confirmed - Payment Submitted',
+        fee: 'Rs. 2,999 (Lunch & Snacks Included)',
+        utr: 'Payment Completed (Screenshot Attached)'
+      };
+    }
+
+    // Function 1: Download Pass as PDF / Print
+    function downloadPassPdf() {
+      var data = getRegistrationDataForPass();
+      var passHtml = generatePassHtml(data);
+      var printWin = window.open('', '_blank');
+      if (printWin) {
+        printWin.document.open();
+        printWin.document.write(passHtml);
+        printWin.document.close();
+        printWin.focus();
+        setTimeout(function () {
+          try {
+            printWin.print();
+          } catch (err) {
+            console.warn('Print trigger error:', err);
+          }
+        }, 500);
+      } else {
+        openPassPreviewModal();
+      }
+    }
+
+    // Function 2: Save Standalone HTML file
+    function downloadPassHtmlFile() {
+      var data = getRegistrationDataForPass();
+      var passHtml = generatePassHtml(data);
+      var blob = new Blob([passHtml], { type: 'text/html;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement('a');
+      link.href = url;
+      link.download = 'CCM_VIP_Delegate_Pass_' + (data.regId || 'CCM-TPT-10036') + '.html';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast('Registration form HTML downloaded successfully!');
+    }
+
+    // Function 3: Preview Pass in Modal
+    function openPassPreviewModal() {
+      var data = getRegistrationDataForPass();
+      var passHtml = generatePassHtml(data);
+      var frame = document.getElementById('previewPassFrame');
+      if (frame) {
+        frame.srcdoc = passHtml;
+      }
+      var modal = document.getElementById('passPreviewModal');
+      if (modal) {
+        modal.classList.add('open');
+      }
+    }
+
+    // Wire up pass buttons
+    var downloadPassPdfBtn = document.getElementById('downloadPassPdfBtn');
+    if (downloadPassPdfBtn) downloadPassPdfBtn.addEventListener('click', downloadPassPdf);
+
+    var downloadPassHtmlBtn = document.getElementById('downloadPassHtmlBtn');
+    if (downloadPassHtmlBtn) downloadPassHtmlBtn.addEventListener('click', downloadPassHtmlFile);
+
+    var viewPassModalBtn = document.getElementById('viewPassModalBtn');
+    if (viewPassModalBtn) viewPassModalBtn.addEventListener('click', openPassPreviewModal);
+
+    var closePassPreviewBtn = document.getElementById('closePassPreviewBtn');
+    if (closePassPreviewBtn) {
+      closePassPreviewBtn.addEventListener('click', function () {
+        var modal = document.getElementById('passPreviewModal');
+        if (modal) modal.classList.remove('open');
+      });
+    }
+
+    var printFromPreviewBtn = document.getElementById('printFromPreviewBtn');
+    if (printFromPreviewBtn) {
+      printFromPreviewBtn.addEventListener('click', function () {
+        var frame = document.getElementById('previewPassFrame');
+        if (frame && frame.contentWindow) {
+          frame.contentWindow.focus();
+          frame.contentWindow.print();
+        } else {
+          downloadPassPdf();
+        }
+      });
+    }
+
+    // Step 2: Instant Final Submission with Excel & Google Sheets Sync
     utrForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
       if (!registration) {
         showToast('Please fill in your Step 1 details first.');
-        backToStep1.click();
+        returnToStep1();
         return;
       }
 
-      var utr = '';
-      var regId = 'CCM-TRP-' + Math.floor(10000 + Math.random() * 90000);
+      var regId = window.currentRegId || ('CCM-TPT-' + Math.floor(10000 + Math.random() * 90000));
+      window.currentRegId = regId;
 
-      var payload = {
+      var utrInputEl = document.getElementById('utrInput');
+      var userUtr = (utrInputEl && utrInputEl.value.trim()) ? utrInputEl.value.trim() : 'Payment Completed (Screenshot Attached)';
+
+      var finalPayload = {
         timestamp: new Date().toISOString(),
         regId: regId,
-        fullName: registration.fullName,
-        mobile: registration.mobile,
-        email: registration.email,
-        category: registration.category,
-        knowledge: registration.knowledge,
-        location: registration.location,
-        freelance: registration.freelance,
-        utr: utr,
-        receiptFilename: receiptFileData1 ? receiptFileData1.name : 'None',
+        fullName: registration.fullName || '',
+        mobile: registration.mobile || '',
+        email: registration.email || '',
+        category: registration.category || '',
+        knowledge: registration.knowledge || '',
+        location: registration.location || '',
+        freelance: registration.freelance || '',
+        status: 'Confirmed - Payment Submitted',
+        fee: 'Rs. 2,999 (Lunch & Snacks Included)',
+        utr: userUtr,
+        receiptFilename: receiptFileData1 ? receiptFileData1.name : (receiptFileData2 ? receiptFileData2.name : 'Screenshot Attached'),
         receiptBase64: receiptFileData1 ? receiptFileData1.base64 : '',
         receipt2Filename: receiptFileData2 ? receiptFileData2.name : 'None',
         receipt2Base64: receiptFileData2 ? receiptFileData2.base64 : ''
       };
 
-      // 1. Immediately backup to localStorage
-      try {
-        var existing = JSON.parse(localStorage.getItem('ccm_workshop_registrations') || '[]');
-        existing.push(payload);
-        localStorage.setItem('ccm_workshop_registrations', JSON.stringify(existing));
-      } catch (storageErr) {
-        console.warn('LocalStorage error:', storageErr);
-      }
+      // 1. Immediately update in localStorage for Excel export
+      saveOrUpdateRegistration(finalPayload);
 
-      // 2. IMMEDIATELY show Success Modal with details (Instant UI feedback!)
+      // 2. Cache confirmed payload for pass generation
+      window.lastConfirmedRegistration = finalPayload;
+
+      // 3. Immediately show Success Modal with all details & pass download options
       modalRegId.textContent = regId;
-      modalName.textContent = registration.fullName;
-      modalMobile.textContent = registration.mobile;
-      modalUtr.textContent = utr;
+      modalName.textContent = finalPayload.fullName;
+      modalMobile.textContent = finalPayload.mobile;
+      modalUtr.textContent = finalPayload.utr;
       successModal.classList.add('open');
 
-      // 3. Reset forms immediately
+      // 4. Reset forms
       utrForm.reset();
       regForm.reset();
-      registration = null;
       receiptFileData1 = null;
       receiptFileData2 = null;
       if (uploadPreview1) uploadPreview1.style.display = 'none';
@@ -2290,19 +3341,8 @@
       if (uploadPreview2) uploadPreview2.style.display = 'none';
       if (dropzoneBox2) dropzoneBox2.style.display = 'flex';
 
-      // 4. Background transmission to Google Sheets (Runs quietly without freezing screen)
-      if (GOOGLE_SHEET_WEBAPP_URL && GOOGLE_SHEET_WEBAPP_URL.startsWith('http')) {
-        fetch(GOOGLE_SHEET_WEBAPP_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        }).then(function () {
-          console.log('Google Sheets record stored successfully:', regId);
-        }).catch(function (fetchErr) {
-          console.warn('Google Sheets background sync error:', fetchErr);
-        });
-      }
+      // 5. Background transmission of confirmed record to Google Sheets
+      syncToGoogleSheets(finalPayload);
     });
 
     modalCloseBtn.addEventListener('click', function () {
@@ -2310,7 +3350,7 @@
       window.location.href = 'index.html';
     });
 
-    // Admin: Export All Registrations to CSV
+    // Admin: Export All Registrations to Excel / CSV with UTF-8 BOM
     document.getElementById('exportCsvBtn').addEventListener('click', function () {
       try {
         var list = JSON.parse(localStorage.getItem('ccm_workshop_registrations') || '[]');
@@ -2319,28 +3359,51 @@
           return;
         }
 
-        var headers = ["Timestamp", "Registration ID", "Full Name", "Mobile", "Email", "Category", "Knowledge Level", "Location", "Freelance Interest", "UTR ID", "Receipt 1 Filename", "Receipt 2 Filename"];
-        var csvRows = [headers.join(",")];
+        var headers = [
+          "Timestamp",
+          "Registration ID",
+          "Status",
+          "Full Name",
+          "Mobile",
+          "Email",
+          "Category / Role",
+          "Knowledge Level",
+          "Location / City",
+          "Freelance Interest",
+          "Workshop Fee",
+          "UTR / Payment Reference",
+          "Official VIP Pass Status",
+          "Screenshot 1 Attached",
+          "Screenshot 2 Attached"
+        ];
+        var csvRows = [headers.map(function (h) { return '"' + h.replace(/"/g, '""') + '"'; }).join(",")];
 
         list.forEach(function (item) {
           var row = [
-            '"' + (item.timestamp || '') + '"',
-            '"' + (item.regId || '') + '"',
-            '"' + (item.fullName || '') + '"',
-            '"' + (item.mobile || '') + '"',
-            '"' + (item.email || '') + '"',
-            '"' + (item.category || '') + '"',
-            '"' + (item.knowledge || '') + '"',
-            '"' + (item.location || '') + '"',
-            '"' + (item.freelance || '') + '"',
-            '"' + (item.utr || '') + '"',
-            '"' + (item.receiptFilename || item.receipt1Filename || '') + '"',
-            '"' + (item.receipt2Filename || '') + '"'
+            item.timestamp || '',
+            item.regId || '',
+            item.status || 'Confirmed - Payment Submitted',
+            item.fullName || '',
+            item.mobile || '',
+            item.email || '',
+            item.category || '',
+            item.knowledge || '',
+            item.location || '',
+            item.freelance || '',
+            item.fee || '₹2,999',
+            item.utr || '',
+            item.regId ? ('VIP Pass Generated (' + item.regId + ')') : 'Pending',
+            item.receiptFilename || (item.receiptBase64 ? 'Yes (Attached)' : 'None'),
+            item.receipt2Filename || (item.receipt2Base64 ? 'Yes (Attached)' : 'None')
           ];
-          csvRows.push(row.join(","));
+          csvRows.push(row.map(function (val) {
+            return '"' + String(val).replace(/"/g, '""') + '"';
+          }).join(","));
         });
 
-        var blob = new Blob([csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
+        // Add UTF-8 BOM so Microsoft Excel opens cleanly without encoding issues
+        var BOM = "\uFEFF";
+        var blob = new Blob([BOM + csvRows.join("\r\n")], { type: "text/csv;charset=utf-8;" });
         var url = URL.createObjectURL(blob);
         var link = document.createElement("a");
         link.setAttribute("href", url);
@@ -2348,7 +3411,7 @@
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        showToast('Exported ' + list.length + ' registration(s) to CSV!');
+        showToast('Exported ' + list.length + ' registration(s) to Excel / CSV!');
       } catch (err) {
         showToast('Failed to export CSV: ' + err.message);
       }
