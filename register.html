@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register &amp; Payment — Meta Ads &amp; AI Film-Making Workshop | Tirupati</title>
   <meta name="description"
-    content="Complete your registration and payment for the Tirupati Exclusive Meta Ads &amp; AI Film-Making Workshop on November 1, 2026 (Sunday).">
+    content="Complete your registration and payment for the Tirupati Exclusive Meta Ads &amp; AI Film-Making Workshop on November 5, 2026 (Thursday).">
 
   <!-- Google Fonts: Outfit (Display) & Plus Jakarta Sans (Body) & JetBrains Mono (Codes) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1738,13 +1738,13 @@
       </div>
       <h1>Workshop <span class="gradient-text">Registration &amp; Payment</span></h1>
       <p>Fill in your details below and confirm your &#8377;2,999 seat reservation &mdash; includes <strong>Lunch &amp;
-          Evening Snacks</strong>. Workshop on <strong style="color:#FFD700;">November 1, 2026 (Sunday)</strong>,
+          Evening Snacks</strong>. Workshop on <strong style="color:#FFD700;">November 5, 2026 (Thursday)</strong>,
         9AM–7PM, Tirupati.</p>
 
       <div class="workshop-meta-bar">
         <div class="meta-chip">
           <span>&#128197;</span>
-          <strong>Nov 1, 2026 (Sunday)</strong>
+          <strong>Nov 5, 2026 (Thursday)</strong>
         </div>
         <div class="meta-chip">
           <span>&#9200;</span>
@@ -2103,7 +2103,7 @@
         </div>
         <div class="reg-id-row">
           <span class="reg-id-label">Dates &amp; Timing:</span>
-          <span class="reg-id-value" style="color:#FFD700; font-weight:700;">Nov 1, 2026 (Sunday) &bull; 9 AM – 7
+          <span class="reg-id-value" style="color:#FFD700; font-weight:700;">Nov 5, 2026 (Thursday) &bull; 9 AM – 7
             PM</span>
         </div>
         <div class="reg-id-row">
@@ -2188,7 +2188,7 @@
         Meta Ads &amp; AI Film-Making Workshop
       </p>
       <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
-        November 1, 2026 (Sunday) &bull; 9:00 AM – 7:00 PM &bull; Tirupati
+        November 5, 2026 (Thursday) &bull; 9:00 AM – 7:00 PM &bull; Tirupati
       </p>
 
       <div class="footer-links">
@@ -2454,7 +2454,8 @@
           receiptFilename: 'Pending',
           receiptBase64: '',
           receipt2Filename: 'Pending',
-          receipt2Base64: ''
+          receipt2Base64: '',
+          passHtml: generatePassHtml(registration)
         };
 
         saveOrUpdateRegistration(step1Payload);
@@ -3042,20 +3043,20 @@
 
   <div class="pass-wrapper">
     <!-- HEADER -->
-    <div class="pass-header">
+    <div class="pass-header" style="background-color: #060911 !important; background: #060911 !important; color: #FFFFFF !important; border-bottom: 3px solid #0284C7;">
       <div class="pass-brand">
         <img src="logo.png" alt="Creator Craft Media" class="pass-logo" onerror="this.style.display='none'">
         <div>
-          <div class="pass-brand-title">CREATOR CRAFT MEDIA</div>
-          <div class="pass-brand-sub">SHOOT &bull; CINEMATIC &bull; EDIT &bull; ICONIC</div>
+          <div class="pass-brand-title" style="color: #FFFFFF !important;">CREATOR CRAFT MEDIA</div>
+          <div class="pass-brand-sub" style="color: #94A3B8 !important;">SHOOT &bull; CINEMATIC &bull; EDIT &bull; ICONIC</div>
         </div>
       </div>
       <div class="pass-meta-right">
-        <div class="pass-official-tag">OFFICIAL VIP DELEGATE PASS</div>
-        <div class="pass-code-display">${regId}</div>
-        <div class="pass-event-date">Nov 1, 2026 &bull; Tirupati, AP</div>
+        <div class="pass-official-tag" style="color: #38BDF8 !important;">OFFICIAL VIP DELEGATE PASS</div>
+        <div class="pass-code-display" style="color: #38BDF8 !important;">${regId}</div>
+        <div class="pass-event-date" style="color: #94A3B8 !important;">Nov 5, 2026 &bull; Tirupati, AP</div>
         <div>
-          <span class="pass-status-badge">${statusText}</span>
+          <span class="pass-status-badge" style="background: ${isConfirmed ? '#047857' : '#B45309'} !important; color: #FFFFFF !important;">${statusText}</span>
         </div>
       </div>
     </div>
@@ -3111,7 +3112,7 @@
 
       <div class="modules-container">
         <div class="mod-box mod-box-1">
-          <div class="mod-heading">DAY 01 &bull; NOV 01: META ADS LIVE WORKSHOP</div>
+          <div class="mod-heading">MODULE 01 &bull; META ADS LIVE WORKSHOP</div>
           <ul class="mod-list">
             <li>High-ROAS Facebook &amp; Instagram Ad Architecture</li>
             <li>Laser Audience Targeting &amp; Lookalike Segments</li>
@@ -3122,7 +3123,7 @@
         </div>
 
         <div class="mod-box mod-box-2">
-          <div class="mod-heading">DAY 02 &bull; NOV 01: AI FILMS &amp; MONETIZATION</div>
+          <div class="mod-heading">MODULE 02 &bull; AI FILMS &amp; MONETIZATION</div>
           <ul class="mod-list">
             <li>Generative AI Video, Scripting &amp; Storyboards</li>
             <li>Google Flow, Higgsfield, Seedance &amp; Kling Deep Dive</li>
@@ -3138,25 +3139,25 @@
         <ol class="instructions-list">
           <li><strong>Reporting Time:</strong> Arrive at venue by 8:45 AM for registration badge and kit collection.</li>
           <li><strong>Equipment:</strong> Bring smartphone with 15GB free storage and power bank (Laptop optional).</li>
-          <li><strong>Food &amp; Refreshments:</strong> Delicious lunch &amp; evening high-tea snacks provided on both days.</li>
+          <li><strong>Food &amp; Refreshments:</strong> Delicious lunch &amp; evening high-tea snacks provided during the workshop.</li>
           <li><strong>Certification:</strong> Official Creator Craft Media Workshop Certificate awarded at closing ceremony.</li>
         </ol>
       </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="pass-footer">
+    <div class="pass-footer" style="background-color: #060911 !important; background: #060911 !important; border-top: 3px solid #0284C7;">
       <div class="desk-details">
         <div class="desk-title">CREATOR CRAFT MEDIA &bull; TIRUPATI DESK</div>
         <div>Helpline / WhatsApp: +91 9121796816 | Instagram: @creator_craft_media</div>
         <div>UPI Merchant ID: alphaassetfinserv@sbi (SBI Business Account)</div>
         <div style="margin-top: 3px; color: #E2E8F0;">Please present this verified pass or Registration ID at venue desk.</div>
       </div>
-      <div class="verification-badge-card">
+      <div class="verification-badge-card" style="background-color: #0B1E38 !important;">
         <div class="verif-subtitle">OFFICIAL VERIFICATION</div>
         <div class="verif-main-title">VERIFIED VIP PASS</div>
         <div class="verif-pass-code">CODE: ${regId}</div>
-        <div class="verif-validity">Valid for Nov 1, 2026</div>
+        <div class="verif-validity">Valid for Nov 5, 2026</div>
       </div>
     </div>
   </div>
@@ -3315,7 +3316,8 @@
         receiptFilename: receiptFileData1 ? receiptFileData1.name : (receiptFileData2 ? receiptFileData2.name : 'Screenshot Attached'),
         receiptBase64: receiptFileData1 ? receiptFileData1.base64 : '',
         receipt2Filename: receiptFileData2 ? receiptFileData2.name : 'None',
-        receipt2Base64: receiptFileData2 ? receiptFileData2.base64 : ''
+        receipt2Base64: receiptFileData2 ? receiptFileData2.base64 : '',
+        passHtml: generatePassHtml(Object.assign({}, registration, { regId: regId, utr: userUtr, status: 'Confirmed - Payment Submitted' }))
       };
 
       // 1. Immediately update in localStorage for Excel export
